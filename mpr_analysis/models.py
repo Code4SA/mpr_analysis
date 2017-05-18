@@ -9,7 +9,7 @@ Base = declarative_base()
 class Product(Base):
     __tablename__ = 'product'
     id = Column(Integer, primary_key=True)
-    nappi_code = Column(String, unique=True, nullable=False)
+    nappi_code = Column(String, nullable=False)
     regno = Column(String, nullable=False)
     name = Column(String, nullable=False)
     schedule = Column(String)
@@ -20,6 +20,10 @@ class Product(Base):
     ingredients = relationship("ProductIngredient",
                                back_populates="product")
     prices = relationship("ProductSEP", back_populates="product")
+
+    __table_args__ = (
+        UniqueConstraint('nappi_code', 'pack_size', name='product_unique_nappi_code_pack_size'),
+    )
 
     def __unicode__(self):
         return self.name
@@ -45,8 +49,9 @@ class Ingredient(Base):
 
 class ProductIngredient(Base):
     __tablename__ = 'product_ingredient'
-    product_id = Column(Integer, ForeignKey('product.id'), primary_key=True)
-    ingredient_id = Column(Integer, ForeignKey('ingredient.id'), primary_key=True)
+    id = Column(Integer, primary_key=True)
+    product_id = Column(Integer, ForeignKey('product.id'))
+    ingredient_id = Column(Integer, ForeignKey('ingredient.id'))
     strength = Column(String, nullable=False)
     product = relationship("Product", back_populates="ingredients")
     ingredient = relationship("Ingredient", back_populates="products")

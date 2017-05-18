@@ -132,7 +132,7 @@ def main():
     new_price_count = 0
 
     for p in parse(filename):
-        session = session = Session()
+        session = Session()
         print \
             "products    %d (%d)\n"\
             "prices      %d (%d)\n"\
