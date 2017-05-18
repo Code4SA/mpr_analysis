@@ -22,7 +22,7 @@ class Product(Base):
     prices = relationship("ProductSEP", back_populates="product")
 
     __table_args__ = (
-        UniqueConstraint('nappi_code', 'pack_size', name='product_unique_nappi_code_pack_size'),
+        UniqueConstraint('regno', 'nappi_code', 'pack_size', 'num_packs', 'schedule', 'is_generic', 'dosage_form', name='product_unique'),
     )
 
     def __unicode__(self):

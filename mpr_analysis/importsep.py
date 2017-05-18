@@ -7,7 +7,7 @@ import xlrd
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 import json
-
+from copy import copy
 
 name_change = {
     "amoxycillin": "Amoxicillin",
@@ -39,8 +39,11 @@ def float_or_none(x):
         return None
 
 
-def get_or_create(session, model, as_dict):
-    instance = session.query(model).filter_by(**as_dict).first()
+def get_or_create(session, model, as_dict, exclude=[]):
+    search_args = copy(as_dict)
+    for k in exclude:
+        del search_args[k]
+    instance = session.query(model).filter_by(**search_args).first()
     if instance:
         return instance, False
     else:
@@ -133,14 +136,15 @@ def main():
 
     for p in parse(filename):
         session = Session()
-        print \
-            "products    %d (%d)\n"\
-            "prices      %d (%d)\n"\
-            "ingredients %d (%d)" % \
-            (product_count, new_product_count,
-             price_count, new_price_count,
-             ingredient_count, new_ingredient_count)
-        print(p)
+        if (product_count % 100) == 0:
+            print "---------------------\n"\
+                "products    %d (%d)\n"\
+                "prices      %d (%d)\n"\
+                "ingredients %d (%d)" % \
+                (product_count, new_product_count,
+                 price_count, new_price_count,
+                 ingredient_count, new_ingredient_count)
+            print(p)
 
         ingredient_dicts = p['ingredients']
         sep = p['sep']
@@ -149,7 +153,7 @@ def main():
         del p['sep']
         del p['effective_date']
 
-        product, new_product = get_or_create(session, Product, p)
+        product, new_product = get_or_create(session, Product, p, ['name'])
         product_count += 1
         if new_product:
             new_product_count += 1
