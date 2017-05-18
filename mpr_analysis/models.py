@@ -24,6 +24,9 @@ class Product(Base):
     def __unicode__(self):
         return self.name
 
+    def __repr__(self):
+        return "<Product: %s>" % self.name
+
 
 class Ingredient(Base):
     __tablename__ = 'ingredient'
@@ -35,6 +38,9 @@ class Ingredient(Base):
     __table_args__ = (
         UniqueConstraint('name', 'unit', name='ingredient_unique_name_unit'),
     )
+
+    def __repr__(self):
+        return "<Ingredient: %s>" % self.name
 
 
 class ProductIngredient(Base):
@@ -50,6 +56,9 @@ class ProductIngredient(Base):
     def __unicode__(self):
         return "%s %s" % (self.ingredient, self.strength)
 
+    def __repr__(self):
+        return "<ProductIngredient: %s %s %s>" % (self.product.name, self.ingredient.name, self.strength)
+
 
 class ProductSEP(Base):
     __tablename__ = 'product_sep'
@@ -58,3 +67,6 @@ class ProductSEP(Base):
     effective_date = Column(Date)
     product_id = Column(Integer, ForeignKey('product.id'))
     product = relationship("Product", back_populates="prices")
+
+    def __repr__(self):
+        return "<ProductSEP: %s %s>" % (self.product.name, self.sep)

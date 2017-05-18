@@ -6,6 +6,7 @@ from models import Product, ProductIngredient, Ingredient, ProductSEP
 import xlrd
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+import json
 
 
 name_change = {
@@ -18,16 +19,34 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+def str_int_or_none(x):
+    try:
+        return str(int(x))
+    except (ValueError, TypeError):
+        return ''
 
-def get_or_create(session, model, defaults=None, **kwargs):
-    instance = session.query(model).filter_by(**kwargs).first()
+def int_or_none(x):
+    try:
+        return int(x)
+    except (ValueError, TypeError):
+        return None
+
+
+def float_or_none(x):
+    try:
+        return float(x)
+    except (ValueError, TypeError):
+        return None
+
+
+def get_or_create(session, model, as_dict):
+    instance = session.query(model).filter_by(**as_dict).first()
     if instance:
         return instance, False
     else:
-        params = dict((k, v) for k, v in kwargs.iteritems() if not isinstance(v, ClauseElement))
-        params.update(defaults or {})
-        instance = model(**params)
+        instance = model(**as_dict)
         session.add(instance)
+        session.flush()
         return instance, True
 
 
@@ -40,8 +59,8 @@ def parse(filename):
     for idx in range(1, worksheet.nrows):
         nappi_code = worksheet.cell_value(idx, 3)
         regno = worksheet.cell_value(idx, 2).lower()
-        pack_size = worksheet.cell_value(idx, 11)
-        num_packs = worksheet.cell_value(idx, 12)
+        pack_size = int_or_none(worksheet.cell_value(idx, 11))
+        num_packs = int_or_none(worksheet.cell_value(idx, 12))
         sep = worksheet.cell_value(idx, 16)
         excel_effective_date = worksheet.cell_value(idx, 18)
         name = worksheet.cell_value(idx, 6).title()
@@ -75,10 +94,10 @@ def parse(filename):
             num_packs = num_packs or 1
 
             product = {
-                "nappi_code" : nappi_code,
-                "regno" : regno,
+                "nappi_code" : nappi_code.strip(),
+                "regno" : regno.strip(),
                 "schedule" : worksheet.cell_value(idx, 5),
-                "name" : name,
+                "name" : name.strip(),
                 "dosage_form" : worksheet.cell_value(idx, 10).title(),
                 "pack_size" : pack_size,
                 "num_packs" : num_packs,
@@ -90,41 +109,30 @@ def parse(filename):
             skip_ingredients = False
 
         if not skip_ingredients:
-            ingredient_name = worksheet.cell_value(idx, 7).title()
+            ingredient_name = worksheet.cell_value(idx, 7).title().strip()
+
             product["ingredients"].append({
                 "name" : name_change.get(ingredient_name.lower(), ingredient_name),
-                "strength" : worksheet.cell_value(idx, 8),
-                "unit" : worksheet.cell_value(idx, 9).lower(),
+                "strength" : str_int_or_none(worksheet.cell_value(idx, 8)),
+                "unit" : worksheet.cell_value(idx, 9).lower().strip(),
             })
-
 
 
 def main():
     filename = sys.argv[1]
 
-    def int_or_none(x):
-        try:
-            return int(x)
-        except (ValueError, TypeError):
-            return None
-
-    def float_or_none(x):
-        try:
-            return float(x)
-        except (ValueError, TypeError):
-            return None
-
     engine = create_engine(DB_URI)
     Session = sessionmaker(bind=engine)
 
+    product_count = 0
+    ingredient_count = 0
+    price_count = 0
+    new_product_count = 0
+    new_ingredient_count = 0
+    new_price_count = 0
+
     for p in parse(filename):
         session = session = Session()
-        product_count = 0
-        ingredient_count = 0
-        price_count = 0
-        new_product_count = 0
-        new_ingredient_count = 0
-        new_price_count = 0
         print \
             "products    %d (%d)\n"\
             "prices      %d (%d)\n"\
@@ -159,6 +167,10 @@ def main():
         if new_product_sep:
             new_price_count += 1
 
+        unique_ingredients = {}
+        for i in ingredient_dicts:
+            unique_ingredients[json.dumps(i, sort_keys=True)] = i
+        ingredient_dicts = unique_ingredients.values()
         for i in ingredient_dicts:
             strength = i['strength']
             del i['strength']
@@ -177,6 +189,7 @@ def main():
             if new_ingredient:
                 new_ingredient_count += 1
         session.commit()
+
 
 if __name__ == "__main__":
     main()
