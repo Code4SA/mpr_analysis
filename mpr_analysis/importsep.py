@@ -59,6 +59,7 @@ def parse(filename):
 
     product = None
     skip_ingredients = False
+    latest_date = None
     for idx in range(1, worksheet.nrows):
         nappi_code = worksheet.cell_value(idx, 3)
         regno = worksheet.cell_value(idx, 2).lower()
@@ -95,6 +96,17 @@ def parse(filename):
                 continue
             pack_size = pack_size or 1
             num_packs = num_packs or 1
+            try:
+                effective_date = xlrd.xldate.xldate_as_datetime(excel_effective_date, workbook.datemode)
+                latest_date = effective_date
+            except ValueError, e:
+                print e
+                if latest_date:
+                    effective_date = latest_date
+                else:
+                    print "Could not process %s (%s) due to lack of effective_date"
+                    skip_ingredients = True
+                    continue
 
             product = {
                 "nappi_code" : nappi_code.strip(),
@@ -105,7 +117,7 @@ def parse(filename):
                 "pack_size" : pack_size,
                 "num_packs" : num_packs,
                 "sep" : sep,
-                "effective_date": xlrd.xldate.xldate_as_datetime(excel_effective_date, workbook.datemode),
+                "effective_date": effective_date,
                 "is_generic" : is_generic,
                 "ingredients" : []
             }
