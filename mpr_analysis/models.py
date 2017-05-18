@@ -6,20 +6,6 @@ from sqlalchemy.orm import relationship
 Base = declarative_base()
 
 
-class ProductIngredient(Base):
-    __tablename__ = 'product_ingredient'
-    product_id = Column(Integer, ForeignKey('product.id'), primary_key=True)
-    ingredient_id = Column(Integer, ForeignKey('ingredient.id'), primary_key=True)
-    strength = Column(String, nullable=False)
-    product = relationship("Product", back_populates="ingredients")
-    ingredient = relationship("Ingredient", back_populates="products")
-    __table_args__ = (
-        UniqueConstraint('product_id', 'ingredient_id', 'strength', name='product_ingredient_unique_product_ingredient_strength'),
-    )
-    def __unicode__(self):
-        return "%s %s" % (self.ingredient, self.strength)
-
-
 class Product(Base):
     __tablename__ = 'product'
     id = Column(Integer, primary_key=True)
@@ -29,10 +15,11 @@ class Product(Base):
     schedule = Column(String)
     dosage_form = Column(String)
     pack_size = Column(Float, nullable=False)
-    is_generic = Column(Boolean)
+    is_generic = Column(String)
+    num_packs = Column(Integer)
     ingredients = relationship("ProductIngredient",
                                back_populates="product")
-    prices = relationship("ProductSEP")
+    prices = relationship("ProductSEP", back_populates="product")
 
     def __unicode__(self):
         return self.name
@@ -50,9 +37,24 @@ class Ingredient(Base):
     )
 
 
+class ProductIngredient(Base):
+    __tablename__ = 'product_ingredient'
+    product_id = Column(Integer, ForeignKey('product.id'), primary_key=True)
+    ingredient_id = Column(Integer, ForeignKey('ingredient.id'), primary_key=True)
+    strength = Column(String, nullable=False)
+    product = relationship("Product", back_populates="ingredients")
+    ingredient = relationship("Ingredient", back_populates="products")
+    __table_args__ = (
+        UniqueConstraint('product_id', 'ingredient_id', 'strength', name='product_ingredient_unique_product_ingredient_strength'),
+    )
+    def __unicode__(self):
+        return "%s %s" % (self.ingredient, self.strength)
+
+
 class ProductSEP(Base):
     __tablename__ = 'product_sep'
     id = Column(Integer, primary_key=True)
     sep = Column(Float, nullable=False)
     effective_date = Column(Date)
     product_id = Column(Integer, ForeignKey('product.id'))
+    parent = relationship("Product", back_populates="prices")
