@@ -57,4 +57,4 @@ class ProductSEP(Base):
     sep = Column(Float, nullable=False)
     effective_date = Column(Date)
     product_id = Column(Integer, ForeignKey('product.id'))
-    parent = relationship("Product", back_populates="prices")
+    product = relationship("Product", back_populates="prices")
