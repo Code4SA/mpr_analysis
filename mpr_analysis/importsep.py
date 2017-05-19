@@ -60,7 +60,7 @@ def parse(filename):
     product = None
     skip_ingredients = False
     latest_date = None
-    for idx in range(1, worksheet.nrows):
+    for idx in range(0, worksheet.nrows):
         nappi_code = worksheet.cell_value(idx, 3)
         regno = worksheet.cell_value(idx, 2).lower()
         pack_size = int_or_none(worksheet.cell_value(idx, 11))

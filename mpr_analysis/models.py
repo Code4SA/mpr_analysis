@@ -25,11 +25,14 @@ class Product(Base):
         UniqueConstraint('regno', 'nappi_code', 'pack_size', 'num_packs', 'schedule', 'is_generic', 'dosage_form', name='product_unique'),
     )
 
-    def __unicode__(self):
-        return self.name
+    # related products
+    # ----------------
+    # products that have the same set of ingredients with the same strength
+    #@property
+    #def equivalence_key(self):
 
     def __repr__(self):
-        return "<Product: %s>" % self.name
+        return ("<Product: %s>" % self.name).encode('utf-8')
 
 
 class Ingredient(Base):

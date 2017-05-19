@@ -1,0 +1,4606 @@
+[
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Active Ingredients",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Active Ingredients",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diphenhydramine HCl ",
+          "Diphenhydramine Hcl",
+          "diphenhydramine HCl",
+          "Diphenhydramine HCL                ",
+          "Diphenhydramine Hcl                ",
+          " Diphenhydramine HCl ",
+          "Diphenhydramine HCl",
+          "Diphenhydramine HCL",
+          "Diphenhydramine HCl, "
+        ],
+        "to": "Diphenhydramine HCl "
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Paracetamol",
+          "Paracetamol ",
+          "paracetamol ",
+          "paracetamol",
+          " Paracetamol ",
+          "           Paracetamol",
+          "          Paracetamol",
+          "Paracetamol        "
+        ],
+        "to": "Paracetamol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Perindopril Tert-Butylamine",
+          "Perindopril tertbutylamine",
+          "Perindopril tert-butylamine",
+          "Perindopril Tert-butylamine",
+          "Perindopril tert-Butylamine",
+          "Perindopril, Tert-Butylamine",
+          "PERINDOPRIL TERT-BUTYLAMINE"
+        ],
+        "to": "Perindopril Tert-Butylamine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Codeine Phosphate",
+          "Codeine phosphate",
+          " Codeine Phosphate",
+          "Codeine Phosphate ",
+          " Codeine phosphate ",
+          "codeine phosphate",
+          "codeine phosphate "
+        ],
+        "to": "Codeine Phosphate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diphtheria toxoid",
+          "Diphtheria Toxoid",
+          "Diphtheria toxoid ",
+          "Diphtheria Toxoid ",
+          "Diphtheria Toxoid           ",
+          "Diphtheria toxoid  "
+        ],
+        "to": "Diphtheria toxoid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Doxylamine succinate",
+          "Doxylamine Succinate",
+          " Doxylamine succinate ",
+          "Doxylamine Succinate ",
+          "doxylamine succinate",
+          " Doxylamine succinate"
+        ],
+        "to": "Doxylamine succinate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hydrochlorothiazide",
+          "hydrochlorothiazide",
+          "Hydrochlorothiazide ",
+          "hydrochlorothiazide ",
+          "HYDROCHLOROTHIAZIDE",
+          " Hydrochlorothiazide"
+        ],
+        "to": "Hydrochlorothiazide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tramadol Hydrochloride",
+          "Tramadol hydrochloride",
+          "Tramadol hydrochloride ",
+          "Tramadol  Hydrochloride",
+          "Tramadol hydrochloride\n"
+        ],
+        "to": "Tramadol Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Caffeine",
+          "Caffeine ",
+          " Caffeine ",
+          "caffeine",
+          "caffeine "
+        ],
+        "to": "Caffeine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anhydrous Theophylline",
+          "Theophylline Anhydrous",
+          "Anhydrous theophylline",
+          "Theophylline anhydrous",
+          "Theophylline Anhydrous "
+        ],
+        "to": "Anhydrous Theophylline"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Levofloxacin",
+          "Levofloxacin ",
+          " Levofloxacin",
+          "LEVOFLOXACIN",
+          " levofloxacin"
+        ],
+        "to": "Levofloxacin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Chlorpheniramine Maleate",
+          "Chlorpheniramine maleate",
+          "chlorpheniramine maleate",
+          "Chlorpheniramine Maleate ",
+          "Chlorpheniramine maleate "
+        ],
+        "to": "Chlorpheniramine Maleate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Metronidazole",
+          "Metronidazole ",
+          " Metronidazole",
+          "METRONIDAZOLE ",
+          "METRONIDAZOLE"
+        ],
+        "to": "Metronidazole"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Amlodipine Besilate",
+          "Amlodipine  Besilate ",
+          "Amlodipine besilate",
+          "Amlodipine Besilate ",
+          "Amlodipine  Besilate"
+        ],
+        "to": "Amlodipine Besilate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tetanus toxoid",
+          "Tetanus Toxoid",
+          "tetanus toxoid ",
+          " tetanus toxoid ",
+          "Tetanus toxoid  "
+        ],
+        "to": "Tetanus toxoid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Losartan Potassium",
+          "Losartan potassium",
+          "Losartan Potassium ",
+          "Losartan Potassium  ",
+          "LOSARTAN POTASSIUM"
+        ],
+        "to": "Losartan Potassium"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pertussis toxoid",
+          "Pertussis Toxoid",
+          "pertussis toxoid ",
+          " pertussis toxoid ",
+          "Pertussis toxoid "
+        ],
+        "to": "Pertussis toxoid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sodium citrate",
+          "Sodium citrate ",
+          "sodium citrate",
+          "Sodium Citrate",
+          "Sodium Citrate  "
+        ],
+        "to": "Sodium citrate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cetirizine Dihydrochloride",
+          "Cetirizine dihydrochloride",
+          "Cetirizine di-hydrochloride",
+          "Cetirizine Dihydrochloride ",
+          "Cetirizine  Dihydrochloride"
+        ],
+        "to": "Cetirizine Dihydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sodium chloride",
+          "Sodium Chloride",
+          "Sodium Chloride ",
+          "Sodium Chloride  ",
+          " Sodium Chloride"
+        ],
+        "to": "Sodium chloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Amoxycillin",
+          "Amoxycillin ",
+          "Amoxycillin  ",
+          "AMOXYCILLIN ",
+          "amoxycillin"
+        ],
+        "to": "Amoxycillin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tenofovir Disoproxil Fumarate",
+          "Tenofovir disoproxil fumarate",
+          "Tenofovir Disoproxil Fumarate ",
+          "Tenofovir  Disoproxil Fumarate",
+          "Tenofovir  disoproxil fumarate"
+        ],
+        "to": "Tenofovir Disoproxil Fumarate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lamivudine",
+          "Lamivudine ",
+          "Lamivudine   ",
+          "LAMIVUDINE",
+          "Lamivudine  "
+        ],
+        "to": "Lamivudine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Amlodipine Besylate",
+          "Amlodipine besylate",
+          "Amlodipine besylate ",
+          "Amlodipine Besylate ",
+          "Amlodipine Besylate   "
+        ],
+        "to": "Amlodipine Besylate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ibuprofen",
+          "Ibuprofen ",
+          "IBUPROFEN",
+          "IBUPROFEN "
+        ],
+        "to": "Ibuprofen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gemcitabine hydrochloride",
+          "Gemcitabine Hydrochloride",
+          "Gemcitabine Hydrochloride ",
+          "Gemcitabine hydrochloride "
+        ],
+        "to": "Gemcitabine hydrochloride"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Active Ingredients using expression value.toTitlecase()",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Active Ingredients",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Active Ingredients using expression value.trim()",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Active Ingredients",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Active Ingredients using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Active Ingredients",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Active Ingredients",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Active Ingredients",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anhydrous Glucose",
+          "Glucose (anhydrous)",
+          "Glucose Anhydrous"
+        ],
+        "to": "Anhydrous Glucose"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bupropion Hydrochloride.",
+          "Bupropion Hydrochloride"
+        ],
+        "to": "Bupropion Hydrochloride."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Calcium Chloride Dihydrate",
+          "Calcium Chloride (dihydrate)"
+        ],
+        "to": "Calcium Chloride Dihydrate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anaesthetic Ether",
+          "Ether Anaesthetic"
+        ],
+        "to": "Anaesthetic Ether"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glacial Acetic Acid",
+          "Acetic Acid, Glacial"
+        ],
+        "to": "Glacial Acetic Acid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Insulin (human)",
+          "Human Insulin"
+        ],
+        "to": "Insulin (human)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dexpanthenol",
+          "Dexpanthenol,"
+        ],
+        "to": "Dexpanthenol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Calcium Leucovorin",
+          "Leucovorin Calcium"
+        ],
+        "to": "Calcium Leucovorin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lidocaine Hydrochloride, Anhydrous",
+          "Anhydrous Lidocaine Hydrochloride"
+        ],
+        "to": "Anhydrous Lidocaine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dextrose Anhydrous",
+          "Dextrose, Anhydrous"
+        ],
+        "to": "Dextrose Anhydrous"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "8,5 % Amino Acid Solution, 30 % Glucose Solution, 20 % Lipid Emulsion",
+          "8,5% Amino Acid Solution, 30 % Glucose Solution, 20 % Lipid Emulsion"
+        ],
+        "to": "8,5 % Amino Acid Solution, 30 % Glucose Solution, 20 % Lipid Emulsion"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lopinavir",
+          "Lopinavir/"
+        ],
+        "to": "Lopinavir"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fusidic Acid Anhydrous",
+          "Anhydrous Fusidic Acid"
+        ],
+        "to": "Fusidic Acid Anhydrous"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vitamin K",
+          "Vitamin K!"
+        ],
+        "to": "Vitamin K"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Active Ingredients",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Active Ingredients",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Filamentous Haemagglutinin",
+          "Filamentous Hemagglutinin",
+          "Filamentous Haemaglutinin"
+        ],
+        "to": "Filamentous Haemagglutinin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Water For Injection",
+          "Water For Injections",
+          "Water For Injecton"
+        ],
+        "to": "Water For Injection"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hydrocortisone",
+          "Hydrocortistone",
+          "Hydrocotisone"
+        ],
+        "to": "Hydrocortisone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tenofovir Disoproxil Fumarate",
+          "Tenofovir Disoproxil Fumerate",
+          "Tenofovir Disproxil Fumarate"
+        ],
+        "to": "Tenofovir Disoproxil Fumarate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Triprolidine Hci",
+          "Triprodlidine Hcl",
+          "Triprodlidine Hci"
+        ],
+        "to": "Triprolidine Hci"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Benzylpenicillin",
+          "Benzy Penicillin",
+          "Benzyl Penicillin"
+        ],
+        "to": "Benzylpenicillin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Phenylephrine Hcl",
+          "Phenylephrine Hci"
+        ],
+        "to": "Phenylephrine Hcl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Loperamide Hydrochloride",
+          "Loperamidehydrochloride"
+        ],
+        "to": "Loperamide Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Metoclopramide",
+          "Metaclopramide"
+        ],
+        "to": "Metoclopramide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Beclometasone",
+          "Beclomethasone"
+        ],
+        "to": "Beclometasone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pseudoephedrine",
+          "Pseudoephidrine"
+        ],
+        "to": "Pseudoephedrine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anhydrous Theophylline",
+          "Anhydroustheophylline"
+        ],
+        "to": "Anhydrous Theophylline"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Amoxycillin Trihydrate Equivalent To Amoxycillin",
+          "Amoxycillin Trihydrateequivalent To Amoxycillin"
+        ],
+        "to": "Amoxycillin Trihydrate Equivalent To Amoxycillin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Phenylephrine",
+          "Phenylepherine"
+        ],
+        "to": "Phenylephrine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Triprolidine",
+          "Tripolidine"
+        ],
+        "to": "Triprolidine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Phenylpropanolamine Hydrochloride",
+          "Phenylpropanlamine Hydrochloride"
+        ],
+        "to": "Phenylpropanolamine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Podophyllotoxin",
+          "Podophylotoxin"
+        ],
+        "to": "Podophyllotoxin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ketorolac Tromethamine",
+          "Ketorolac Trimethamine"
+        ],
+        "to": "Ketorolac Tromethamine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aluminium Hydroxide",
+          "Alluminium Hydroxide"
+        ],
+        "to": "Aluminium Hydroxide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gentamicin",
+          "Gentamycin"
+        ],
+        "to": "Gentamicin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Clarithromycin 500mg",
+          "Clarithromycin 500 Mg"
+        ],
+        "to": "Clarithromycin 500mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Benzylpenicillin",
+          "Benzyl Penicillin"
+        ],
+        "to": "Benzylpenicillin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tioguanine",
+          "Thioguanine"
+        ],
+        "to": "Tioguanine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Clotrimazole",
+          "Clotriamazole"
+        ],
+        "to": "Clotrimazole"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Proguanil Hydrochloride",
+          "Proquanil Hydrochloride"
+        ],
+        "to": "Proguanil Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Camphora",
+          "Camphor"
+        ],
+        "to": "Camphora"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Paracetamol",
+          "Paracetemol"
+        ],
+        "to": "Paracetamol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dexamethasone",
+          "Dexamethazone"
+        ],
+        "to": "Dexamethasone"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Active Ingredients",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Active Ingredients",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sumatriptan 50 Mg",
+          "Sumatriptan 50mg"
+        ],
+        "to": "Sumatriptan 50 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "(each Unit Consists Of :-sachet A X 2) Macrogol (peg 3350)",
+          "(each Unit Consists Of :-sachet A X 2)macrogol (peg 3350)"
+        ],
+        "to": "(each Unit Consists Of :-sachet A X 2) Macrogol (peg 3350)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ciprofloxacin 500mg",
+          "Ciprofloxacin 500 Mg"
+        ],
+        "to": "Ciprofloxacin 500mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Guaifenesin",
+          "Guaifenesine"
+        ],
+        "to": "Guaifenesin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Inactivated Type 2 Polio Virus D-antigen",
+          "Inactivated Type 2 Poliovirus D Antigen"
+        ],
+        "to": "Inactivated Type 2 Polio Virus D-antigen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ciprofloxacin 250mg",
+          "Ciprofloxacin 250 Mg"
+        ],
+        "to": "Ciprofloxacin 250mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ethinyl Oestradiol",
+          "Ethinyloestradiol"
+        ],
+        "to": "Ethinyl Oestradiol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Interferon Beta-1a",
+          "Interferon Beta 1a"
+        ],
+        "to": "Interferon Beta-1a"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Inactivated Type 3 Polio Virus D-antigen",
+          "Inactivated Type 3 Poliovirus D Antigen"
+        ],
+        "to": "Inactivated Type 3 Polio Virus D-antigen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cimetidine 200 Mg",
+          "Cimetidine 200mg"
+        ],
+        "to": "Cimetidine 200 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Inactivated Type 1 Polio Virus D-antigen",
+          "Inactivated Type 1 Poliovirus D Antigen"
+        ],
+        "to": "Inactivated Type 1 Polio Virus D-antigen"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Live Attenuated Mumps Virus (rit 4385 Strain)",
+          "Live Attenuated Mumps Virus (rit4385 Strain)"
+        ],
+        "to": "Live Attenuated Mumps Virus (rit 4385 Strain)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Coagulation Factor Viii",
+          "Coagulation Factor Vii"
+        ],
+        "to": "Coagulation Factor Viii"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5 Fluorouracil",
+          "5-fluorouracil"
+        ],
+        "to": "5 Fluorouracil"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ethinylestradiol",
+          "Ethinyl Estradiol"
+        ],
+        "to": "Ethinylestradiol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hyoscine-n-butylbromide",
+          "Hyoscine-n-butyl Bromide"
+        ],
+        "to": "Hyoscine-n-butylbromide"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Active Ingredients using expression grel:replace(value, \"Hci\", \"Hcl\")",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Active Ingredients",
+    "expression": "grel:replace(value, \"Hci\", \"Hcl\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Active Ingredients",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Active Ingredients",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Estradiol Valerate",
+          "Ostradiol Valerate",
+          "Oestradiol Valerate"
+        ],
+        "to": "Estradiol Valerate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Carbocisteine",
+          "Carbocysteine"
+        ],
+        "to": "Carbocisteine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ostradiol Valerate",
+          "Oestradiol Valerate"
+        ],
+        "to": "Ostradiol Valerate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Betmethasone Sodium Phosphate",
+          "Betamethasone Sodium Phosphate"
+        ],
+        "to": "Betamethasone Sodium Phosphate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ofloxacin",
+          "Ofloxacine"
+        ],
+        "to": "Ofloxacin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prednisolone Acetate",
+          "Prednisilone Acetate"
+        ],
+        "to": "Prednisolone Acetate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Estradiol",
+          "Oestradiol"
+        ],
+        "to": "Estradiol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Risperidone",
+          "Risperdone"
+        ],
+        "to": "Risperidone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Codeine Phosphate",
+          "Codeine Phoshate"
+        ],
+        "to": "Codeine Phosphate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diphenhydramine Hydrochloride",
+          "Diphenhydramine Hydrocloride"
+        ],
+        "to": "Diphenhydramine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Guaifenesin",
+          "Guafenesin"
+        ],
+        "to": "Guaifenesin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Estradiol Hemihydrate",
+          "Oestradiol Hemihydrate"
+        ],
+        "to": "Estradiol Hemihydrate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diflucortolone Valerate",
+          "Diflucortolone Valetrate"
+        ],
+        "to": "Diflucortolone Valerate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Clobetasol Propionate",
+          "Clobetasol Propiomate"
+        ],
+        "to": "Clobetasol Propionate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Emtricitabine",
+          "Emitricitabine"
+        ],
+        "to": "Emtricitabine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Desloratadine",
+          "Desloratidine"
+        ],
+        "to": "Desloratadine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Brimonidine Tartrate",
+          "Brimonidine tartrate"
+        ],
+        "to": "Brimonidine Tartrate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mometasone Furoate",
+          "Mometazone Furoate"
+        ],
+        "to": "Mometasone Furoate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Benzydamine Hydrochloride",
+          "Benzydamine Hydrochoride"
+        ],
+        "to": "Benzydamine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hydrochlorothiazide",
+          "Hydochlorothiazide"
+        ],
+        "to": "Hydrochlorothiazide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prednisolone",
+          "Prednisilone"
+        ],
+        "to": "Prednisolone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Doxorubicin Hydrochloride",
+          "Doxorubacin Hydrochloride"
+        ],
+        "to": "Doxorubicin Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colecalciferol",
+          "Colechalciferol"
+        ],
+        "to": "Colecalciferol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bromhexine Hydrochloride",
+          "Bromohexine Hydrochloride"
+        ],
+        "to": "Bromhexine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diphenhydramine Hydrochloride",
+          "Diphenhydramide Hydrochloride"
+        ],
+        "to": "Diphenhydramine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pantoprazole",
+          "Panroprazole"
+        ],
+        "to": "Pantoprazole"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Riboflavine",
+          "Riboflavin"
+        ],
+        "to": "Riboflavine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cefpodoxime",
+          "Cefopodoxime"
+        ],
+        "to": "Cefpodoxime"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Amoxicillin Trihydrate",
+          "Amoxycillin Trihydrate"
+        ],
+        "to": "Amoxicillin Trihydrate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Amlodipine Besylate",
+          "Amlodipine Besilate"
+        ],
+        "to": "Amlodipine Besylate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Triprolidine Hydrochloride",
+          "Triprodlidine Hydrochloride"
+        ],
+        "to": "Triprolidine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gentamicin Sulphate",
+          "Gentamycin Sulphate"
+        ],
+        "to": "Gentamicin Sulphate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aciclovir",
+          "Acyclovir"
+        ],
+        "to": "Acyclovir"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Indapamide",
+          "Indpamide"
+        ],
+        "to": "Indapamide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Epirubicin Hydrochloride",
+          "Epirubicun Hydrochloride"
+        ],
+        "to": "Epirubicin Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tramadol Hydrochloride",
+          "Tromadol Hydrochloride"
+        ],
+        "to": "Tramadol Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Doxylamine Succinate",
+          "Docylamine Succinate"
+        ],
+        "to": "Doxylamine Succinate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Buprenorphine Hydrochloride",
+          "Bupenorphine Hydrochloride"
+        ],
+        "to": "Buprenorphine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fluticasone Propionate",
+          "Flucticasone Propionate"
+        ],
+        "to": "Fluticasone Propionate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Indometacin",
+          "Indomethacin"
+        ],
+        "to": "Indometacin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Clotrimazole",
+          "Cotrimazole"
+        ],
+        "to": "Clotrimazole"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Propranolol",
+          "Propanolol"
+        ],
+        "to": "Propranolol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anti-d (rh) Immunoglobulin",
+          "Anti-d (rho) Immunoglobulin"
+        ],
+        "to": "Anti-d (rh) Immunoglobulin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Magnesium Chloride Hexahydrate",
+          "Magnesium Chloride Hexahydate"
+        ],
+        "to": "Magnesium Chloride Hexahydrate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Norethisterone",
+          "Noresthisterone"
+        ],
+        "to": "Norethisterone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Oestradiol Valerate(orange)",
+          "Estradiol Valerate(orange)"
+        ],
+        "to": "Oestradiol Valerate(orange)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ondansetron",
+          "Ondasetron"
+        ],
+        "to": "Ondansetron"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dolasetron Mesylate",
+          "Dolasetron Mesilate"
+        ],
+        "to": "Dolasetron Mesylate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lidocaine Hydrochloride",
+          "Lidocaine Hydochloride"
+        ],
+        "to": "Lidocaine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glycerin",
+          "Glycerine"
+        ],
+        "to": "Glycerin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Metoclopramide Monohydrohloride",
+          "Metoclopramide Monohydrochloride"
+        ],
+        "to": "Metoclopramide Monohydrohloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cholecalciferol",
+          "Colecalciferol"
+        ],
+        "to": "Cholecalciferol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rifampicin",
+          "Rifampacin"
+        ],
+        "to": "Rifampicin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Purified Diptheria Toxoid",
+          "Purified Diphtheria Toxoid"
+        ],
+        "to": "Purified Diptheria Toxoid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fluorometholone",
+          "Fluoromethalone"
+        ],
+        "to": "Fluorometholone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dried Aliminium Hydroxide",
+          "Dried Aluminium Hydroxide"
+        ],
+        "to": "Dried Aluminium Hydroxide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Triprolidine Hydrochloride",
+          "Tripolidine Hydrochloride"
+        ],
+        "to": "Triprolidine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Loxaglic Acid",
+          "Ioxaglic Acid"
+        ],
+        "to": "Loxaglic Acid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diclofenac Sodium",
+          "Diclofanac Sodium"
+        ],
+        "to": "Diclofenac Sodium"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Terbinafine Hydrochloride",
+          "Terbinafine Hydrochoride"
+        ],
+        "to": "Terbinafine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dimethicone",
+          "Simethicone"
+        ],
+        "to": "Dimethicone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fluticasone Propionate",
+          "Fluticasone Proprionate"
+        ],
+        "to": "Fluticasone Propionate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anhydrous Theophylline",
+          "Anhydrous Theophfylline"
+        ],
+        "to": "Anhydrous Theophylline"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Methoxy Polyethylene Glycol-epoetin Beta",
+          "Methoxy Polythylene Glycol-epoetin Beta"
+        ],
+        "to": "Methoxy Polyethylene Glycol-epoetin Beta"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Insulin Glulisine",
+          "Insulin Slulisine"
+        ],
+        "to": "Insulin Glulisine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Setraline Hydrochloride",
+          "Sertraline Hydrochloride"
+        ],
+        "to": "Setraline Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Chlorobutanol",
+          "Chlorbutanol"
+        ],
+        "to": "Chlorobutanol"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Plasma Proteins",
+          "Plasma Protein"
+        ],
+        "to": "Plasma Proteins"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Perindopril",
+          "Penrindopril"
+        ],
+        "to": "Perindopril"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Beclometasone Dipropionate",
+          "Beclomethasone Dipropionate"
+        ],
+        "to": "Beclometasone Dipropionate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pantoprazole Sodium Sesquihydrate",
+          "Pantoprozole Sodium Sesquihydrate"
+        ],
+        "to": "Pantoprazole Sodium Sesquihydrate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sodium Valproate",
+          "Sodium Vaproate"
+        ],
+        "to": "Sodium Valproate"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dicyclomine Hdrochloride",
+          "Dicyclomine Hydrochloride"
+        ],
+        "to": "Dicyclomine Hydrochloride"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Purified Pertussis Filamentous Haemagglutinin",
+          "Purified Pertussis Filamentous Haemaglutinin"
+        ],
+        "to": "Purified Pertussis Filamentous Haemaglutinin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mitoxantrone Hcl",
+          "Mixoxantrone Hcl"
+        ],
+        "to": "Mitoxantrone Hcl"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Efavirenz",
+          "Effavirenz"
+        ],
+        "to": "Efavirenz"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diclofenac Potassium",
+          "Diclofenak Potassium"
+        ],
+        "to": "Diclofenac Potassium"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cefpodoxime",
+          "Cefpodozime"
+        ],
+        "to": "Cefpodoxime"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Product Proprietary Name using expression value.trim()",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Product Proprietary Name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Product Proprietary Name using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Product Proprietary Name",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Product Proprietary Name using expression value.toTitlecase()",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Product Proprietary Name",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Product Proprietary Name",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Product Proprietary Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Temodal ( Prev Temoxol )",
+          "Temodal (prev Temoxol )",
+          "Temoxol ( Prev Temodal)"
+        ],
+        "to": "Temodal ( Prev Temoxol )"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (4,0mm X 23mm)",
+          "Xience V - 4,0mm X 23mm"
+        ],
+        "to": "Xience V (4,0mm X 23mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,5mm X 8mm)",
+          "Xience V - 3,5mm X 8mm"
+        ],
+        "to": "Xience V (3,5mm X 8mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,25mm X 12mm)",
+          "Xience V - 2,25mm X 12mm"
+        ],
+        "to": "Xience V (2,25mm X 12mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal 2.5% Gluc (2.5) L",
+          "Sabax Dianeal 2.5% Gluc 2.5 L"
+        ],
+        "to": "Sabax Dianeal 2.5% Gluc (2.5) L"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Depo Medrol 40mg (1ml)",
+          "Depo Medrol 40mg 1ml"
+        ],
+        "to": "Depo Medrol 40mg (1ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal 1.5% Gluc (2.5l)",
+          "Sabax Dianeal 1.5% Gluc 2.5l"
+        ],
+        "to": "Sabax Dianeal 1.5% Gluc (2.5l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ceftriaxone -fresenuis 500mg",
+          "Fresenuis Ceftriaxone 500mg"
+        ],
+        "to": "Ceftriaxone -fresenuis 500mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (4,0mm X 8mm)",
+          "Xience V - 4,0mm X 8mm"
+        ],
+        "to": "Xience V (4,0mm X 8mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,25mm X 23mm)",
+          "Xience V - 2,25mm X 23mm"
+        ],
+        "to": "Xience V (2,25mm X 23mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Sodium Chloride 0.9% (50 Ml)",
+          "Sabax Sodium Chloride 0.9% 50 Ml"
+        ],
+        "to": "Sabax Sodium Chloride 0.9% (50 Ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,5mm X 28mm)",
+          "Xience V - 2,5mm X 28mm"
+        ],
+        "to": "Xience V (2,5mm X 28mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Sodium Chloride 0,9% (200ml)",
+          "Sabax Sodium Chloride 0,9% 200ml"
+        ],
+        "to": "Sabax Sodium Chloride 0,9% (200ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (4,0mm X 12mm)",
+          "Xience V - 4,0mm X 12mm"
+        ],
+        "to": "Xience V (4,0mm X 12mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lamidus 100mg Tablets",
+          "Lamidus Tablets 100mg"
+        ],
+        "to": "Lamidus 100mg Tablets"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal Ls 4.25 (1000ml)",
+          "Sabax Dianeal Ls 4.25 1000ml"
+        ],
+        "to": "Sabax Dianeal Ls 4.25 (1000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Pour Saline 0.9% 1000ml",
+          "Sabax Pour Saline 0.9% (1000ml)"
+        ],
+        "to": "Sabax Pour Saline 0.9% 1000ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Liq Bicarb Concentrate 8,4%",
+          "Sabax Liq Bicarb Concentrate 8.4%"
+        ],
+        "to": "Sabax Liq Bicarb Concentrate 8,4%"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Physioneal 40 Glucose 1.36% (2l)",
+          "Physioneal 40 Glucose 1.36% 2l"
+        ],
+        "to": "Physioneal 40 Glucose 1.36% (2l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pantoloc Iv",
+          "Pantoloc I.V."
+        ],
+        "to": "Pantoloc Iv"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Colchicine Houde",
+          "Colchicine Houdé"
+        ],
+        "to": "Colchicine Houde"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Propofol 2% Fresenius 50ml Vial *",
+          "Propofol 2% Fresenius (50ml Vial)"
+        ],
+        "to": "Propofol 2% Fresenius 50ml Vial *"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Flomax 0.4 Sr",
+          "Flomax 0,4 Sr"
+        ],
+        "to": "Flomax 0.4 Sr"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal Ls 4.25 2l In 3l",
+          "Sabax Dianeal Ls 4.25 (2l In 3l)"
+        ],
+        "to": "Sabax Dianeal Ls 4.25 2l In 3l"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal Ls 4.25 (1l In 2l)",
+          "Sabax Dianeal Ls 4.25 1l In 2l"
+        ],
+        "to": "Sabax Dianeal Ls 4.25 (1l In 2l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Auro-cefepime 1000mg (20ml Vial)",
+          "Auro-cefepime 1000mg (20ml Vial))"
+        ],
+        "to": "Auro-cefepime 1000mg (20ml Vial)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (4,0mm X 18mm)",
+          "Xience V - 4,0mm X 18mm"
+        ],
+        "to": "Xience V (4,0mm X 18mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diasol Formula 16 5 Litre",
+          "Diasol Formula 16 (5 Litre)"
+        ],
+        "to": "Diasol Formula 16 5 Litre"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dian N/cal 2.5 Gluc (1l)",
+          "Sabax Dian N/cal 2.5 Gluc 1l"
+        ],
+        "to": "Sabax Dian N/cal 2.5 Gluc (1l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Austell-zopiclone 7,5 Mg",
+          "*austell-zopiclone 7,5 Mg"
+        ],
+        "to": "Austell-zopiclone 7,5 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rispacor 0.5",
+          "Rispacor 0,5"
+        ],
+        "to": "Rispacor 0.5"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Levofloxacin Winthrop I.V. 500",
+          "Levofloxacin Winthrop Iv 500"
+        ],
+        "to": "Levofloxacin Winthrop I.V. 500"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Glucose 5% And Sodium Chloride 0,9% (1000ml)",
+          "Sabax Glucose 5% And Sodium Chloride 0.9% (1000ml)"
+        ],
+        "to": "Sabax Glucose 5% And Sodium Chloride 0,9% (1000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Ringer-lactate 500ml",
+          "Sabax Ringer-lactate (500ml)"
+        ],
+        "to": "Sabax Ringer-lactate 500ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,5mm X 12mm)",
+          "Xience V - 3,5mm X 12mm"
+        ],
+        "to": "Xience V (3,5mm X 12mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,0mm X 28mm)",
+          "Xience V - 3,0mm X 28mm"
+        ],
+        "to": "Xience V (3,0mm X 28mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,75mm X 28mm)",
+          "Xience V - 2,75mm X 28mm"
+        ],
+        "to": "Xience V (2,75mm X 28mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Cimetidine 200mg/2ml 2ml",
+          "Sabax Cimetidine 200mg/2ml (2ml)"
+        ],
+        "to": "Sabax Cimetidine 200mg/2ml 2ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Flohale -dp",
+          "Flohale Dp"
+        ],
+        "to": "Flohale -dp"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,5mm X 23mm)",
+          "Xience V - 3,5mm X 23mm"
+        ],
+        "to": "Xience V (3,5mm X 23mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tramahexal 150 Sr",
+          "Tramahexal Sr 150"
+        ],
+        "to": "Tramahexal 150 Sr"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,75mm X 8mm)",
+          "Xience V - 2,75mm X 8mm"
+        ],
+        "to": "Xience V (2,75mm X 8mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Locoid Lipocream",
+          "Locoid Lipo-cream"
+        ],
+        "to": "Locoid Lipocream"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tramahexal 200 Sr",
+          "Tramahexal Sr 200"
+        ],
+        "to": "Tramahexal 200 Sr"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dianeal 2.5 (2000ml In 3000ml)",
+          "Dianeal 2.5 % (2000ml In 3000ml)"
+        ],
+        "to": "Dianeal 2.5 (2000ml In 3000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Atropine 1 Mg/ml (1ml)",
+          "Sabax Atropine 1 Mg/ml 1ml"
+        ],
+        "to": "Sabax Atropine 1 Mg/ml (1ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Water For Inj 20ml",
+          "Sabax Water For Inj (20ml)"
+        ],
+        "to": "Sabax Water For Inj 20ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Sodium Chloride 0,9% (1000ml)",
+          "Sabax Sodium Chloride 0,9% 1000ml"
+        ],
+        "to": "Sabax Sodium Chloride 0,9% (1000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,25mm X 18mm)",
+          "Xience V - 2,25mm X 18mm"
+        ],
+        "to": "Xience V (2,25mm X 18mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Osmitrol 20% Viaf 500ml",
+          "Sabax Osmitrol 20% Viaf (500ml)"
+        ],
+        "to": "Sabax Osmitrol 20% Viaf 500ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (4,0mm X 15mm)",
+          "Xience V - 4,0mm X 15mm"
+        ],
+        "to": "Xience V (4,0mm X 15mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Ringer-lactate 2000ml",
+          "Sabax Ringer-lactate (2000ml)"
+        ],
+        "to": "Sabax Ringer-lactate 2000ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,25mm X 28mm)",
+          "Xience V - 2,25mm X 28mm"
+        ],
+        "to": "Xience V (2,25mm X 28mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal 1.5 (5l In 5l)",
+          "Sabax Dianeal 1.5 5l In 5l"
+        ],
+        "to": "Sabax Dianeal 1.5 (5l In 5l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal 1.5 (500ml In 1l)",
+          "Sabax Dianeal 1.5 500ml In 1l"
+        ],
+        "to": "Sabax Dianeal 1.5 (500ml In 1l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,5mm X 8mm)",
+          "Xience V - 2,5mm X 8mm"
+        ],
+        "to": "Xience V (2,5mm X 8mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,0mm X 15mm)",
+          "Xience V - 3,0mm X 15mm"
+        ],
+        "to": "Xience V (3,0mm X 15mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,25mm X 15mm)",
+          "Xience V - 2,25mm X 15mm"
+        ],
+        "to": "Xience V (2,25mm X 15mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,75mm X 15mm)",
+          "Xience V - 2,75mm X 15mm"
+        ],
+        "to": "Xience V (2,75mm X 15mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,5mm X 15mm)",
+          "Xience V - 2,5mm X 15mm"
+        ],
+        "to": "Xience V (2,5mm X 15mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Seretide Accuhaler 50/500",
+          "Seretide 50/500 Accuhaler"
+        ],
+        "to": "Seretide Accuhaler 50/500"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Aminophylline Iv (10ml)",
+          "Sabax Aminophylline Iv 10ml"
+        ],
+        "to": "Sabax Aminophylline Iv (10ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Glucose 5% 100ml",
+          "Sabax Glucose 5% (100ml)"
+        ],
+        "to": "Sabax Glucose 5% 100ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Rifinah 300 Fc",
+          "Rifinah Fc 300"
+        ],
+        "to": "Rifinah 300 Fc"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal Ls 4.25 (2.5l In 3l)",
+          "Sabax Dianeal Ls 4.25 2.5l In 3l"
+        ],
+        "to": "Sabax Dianeal Ls 4.25 (2.5l In 3l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Water For Injections (5ml)",
+          "Mylan Water For Injections 5ml"
+        ],
+        "to": "Mylan Water For Injections (5ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal 1.5 (2.5l In 3l)",
+          "Sabax Dianeal 1.5 2.5l In 3l"
+        ],
+        "to": "Sabax Dianeal 1.5 (2.5l In 3l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Low Glucose Acid Diasol (5000ml)",
+          "Sabax Low Glucose Acid Diasol 5000ml"
+        ],
+        "to": "Sabax Low Glucose Acid Diasol (5000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Water For Injections (2ml)",
+          "Mylan Water For Injections 2ml"
+        ],
+        "to": "Mylan Water For Injections (2ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Extraneal 2l",
+          "Extraneal (2l)"
+        ],
+        "to": "Extraneal 2l"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Osmitrol (mannitol) 5% 3000ml",
+          "Sabax Osmitrol (mannitol) 5% (3000ml)"
+        ],
+        "to": "Sabax Osmitrol (mannitol) 5% 3000ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dianeal 2.5 (500 Ml In 1000ml)",
+          "Dianeal 2.5 % (500 Ml In 1000ml)"
+        ],
+        "to": "Dianeal 2.5 (500 Ml In 1000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nutrineal Pd4 W/1.1% Amin Acid 2.5l",
+          "Nutrineal Pd4 W/1.1% Amin Acid (2.5l)"
+        ],
+        "to": "Nutrineal Pd4 W/1.1% Amin Acid 2.5l"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,5mm X 12mm)",
+          "Xience V - 2,5mm X 12mm"
+        ],
+        "to": "Xience V (2,5mm X 12mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Redilanz 2,5",
+          "Redilanz 2.5"
+        ],
+        "to": "Redilanz 2,5"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lamidus 200mg Tablets",
+          "Lamidus Tablets 200mg"
+        ],
+        "to": "Lamidus 200mg Tablets"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dian 2.5% Gluc Normal Cal. (2.5l)",
+          "Sabax Dian 2.5% Gluc Normal Cal. 2.5l"
+        ],
+        "to": "Sabax Dian 2.5% Gluc Normal Cal. (2.5l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Glucose 5% And Sodium Chloride 0,9% (200ml)",
+          "Sabax Glucose 5% And Sodium Chloride 0.9% (200ml)"
+        ],
+        "to": "Sabax Glucose 5% And Sodium Chloride 0,9% (200ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vitafusal 500ml",
+          "Vitafusal (500ml)"
+        ],
+        "to": "Vitafusal 500ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Neonatalyte W/gluc 10% 200ml",
+          "Sabax Neonatalyte W/gluc 10% (200ml)"
+        ],
+        "to": "Sabax Neonatalyte W/gluc 10% 200ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ceftriaxone -fresenuis 1g",
+          "Fresenuis Ceftriaxone 1g"
+        ],
+        "to": "Ceftriaxone -fresenuis 1g"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Water For Injections (10ml)",
+          "Mylan Water For Injections 10ml"
+        ],
+        "to": "Mylan Water For Injections (10ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax High Potasium Acid Diasol (5000ml)",
+          "Sabax High Potasium Acid Diasol 5000ml"
+        ],
+        "to": "Sabax High Potasium Acid Diasol (5000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dian N/cal 4.25 Gluc 1l",
+          "Sabax Dian N/cal 4.25 Gluc (1l)"
+        ],
+        "to": "Sabax Dian N/cal 4.25 Gluc 1l"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,5mm X 23mm)",
+          "Xience V - 2,5mm X 23mm"
+        ],
+        "to": "Xience V (2,5mm X 23mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Plasma Vet 3000ml",
+          "Sabax Plasma Vet (3000ml)"
+        ],
+        "to": "Sabax Plasma Vet 3000ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (4,0mm X 28mm)",
+          "Xience V - 4,0mm X 28mm"
+        ],
+        "to": "Xience V (4,0mm X 28mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,0mm X 12mm)",
+          "Xience V - 3,0mm X 12mm"
+        ],
+        "to": "Xience V (3,0mm X 12mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Haemocarb Acid Concentr 5lt",
+          "Sabax Haemocarb (acid Concentr 5lt)"
+        ],
+        "to": "Sabax Haemocarb Acid Concentr 5lt"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,75mm X 18mm)",
+          "Xience V - 2,75mm X 18mm"
+        ],
+        "to": "Xience V (2,75mm X 18mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,0mm X 8mm)",
+          "Xience V - 3,0mm X 8mm"
+        ],
+        "to": "Xience V (3,0mm X 8mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dian N/cal 1.5 Gluc (1ltr)",
+          "Sabax Dian N/cal 1.5 Gluc 1ltr"
+        ],
+        "to": "Sabax Dian N/cal 1.5 Gluc (1ltr)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,0mm X 18mm)",
+          "Xience V - 3,0mm X 18mm"
+        ],
+        "to": "Xience V (3,0mm X 18mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal 1.5 (2l In 3l)",
+          "Sabax Dianeal 1.5 2l In 3l"
+        ],
+        "to": "Sabax Dianeal 1.5 (2l In 3l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cloxacillin - Fresenius 250mg",
+          "Cloxacillin Fresenius 250mg"
+        ],
+        "to": "Cloxacillin - Fresenius 250mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dobutamine -fresenius 250mg/20ml",
+          "Dobutamine Fresenius 250mg/20ml"
+        ],
+        "to": "Dobutamine -fresenius 250mg/20ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sandoz Co-amoxyclav 1.2g (20ml)",
+          "Sandoz Co-amoxyclav 1.2g 20ml"
+        ],
+        "to": "Sandoz Co-amoxyclav 1.2g (20ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Potassium Chlor 15% 10ml",
+          "Sabax Potassium Chlor 15% (10ml)"
+        ],
+        "to": "Sabax Potassium Chlor 15% 10ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Seretide Accuhaler 50/100",
+          "Seretide 50/100 Accuhaler"
+        ],
+        "to": "Seretide Accuhaler 50/100"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Seretide Accuhaler 50/250",
+          "Seretide 50/250 Accuhaler"
+        ],
+        "to": "Seretide Accuhaler 50/250"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Ringer-lact W/gluc 5% 1l",
+          "Sabax Ringer-lact W/gluc 5% (1l)"
+        ],
+        "to": "Sabax Ringer-lact W/gluc 5% 1l"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ampicillin - Fresenius 250mg Vial",
+          "Ampicillin -fresenius 250mg Vial"
+        ],
+        "to": "Ampicillin - Fresenius 250mg Vial"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Depo Medrol 40mg (2ml)",
+          "Depo Medrol 40mg 2ml"
+        ],
+        "to": "Depo Medrol 40mg (2ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,5mm X 15mm)",
+          "Xience V - 3,5mm X 15mm"
+        ],
+        "to": "Xience V (3,5mm X 15mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sartoc 50/12,5",
+          "Sartoc 50/12.5"
+        ],
+        "to": "Sartoc 50/12,5"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,25mm X 8mm)",
+          "Xience V - 2,25mm X 8mm"
+        ],
+        "to": "Xience V (2,25mm X 8mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lamidus 50mg Tablets",
+          "Lamidus Tablets 50mg"
+        ],
+        "to": "Lamidus 50mg Tablets"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fastum Gel",
+          "Fastum Gel ."
+        ],
+        "to": "Fastum Gel"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bisolvon 0.2%",
+          "Bisolvon 0.2 %"
+        ],
+        "to": "Bisolvon 0.2%"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cloxacillin - Fresenius 500mg",
+          "Cloxacillin Fresenius 500mg"
+        ],
+        "to": "Cloxacillin - Fresenius 500mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dian 4.25% Gluc Normal Cal. (2.5l)",
+          "Sabax Dian 4.25% Gluc Normal Cal. 2.5l"
+        ],
+        "to": "Sabax Dian 4.25% Gluc Normal Cal. (2.5l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Hidroliet (r) W/gluc 5% 1000ml",
+          "Sabax Hidroliet (r) W/gluc 5% (1000ml)"
+        ],
+        "to": "Sabax Hidroliet (r) W/gluc 5% 1000ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,75mm X 12mm)",
+          "Xience V - 2,75mm X 12mm"
+        ],
+        "to": "Xience V (2,75mm X 12mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Elect No.2 W/gluc 10% 1l",
+          "Sabax Elect No.2 W/gluc 10% (1l)"
+        ],
+        "to": "Sabax Elect No.2 W/gluc 10% 1l"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Calcium Chlor 10% 10ml",
+          "Sabax Calcium Chlor 10% (10ml)"
+        ],
+        "to": "Sabax Calcium Chlor 10% 10ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Gen Main Sol W/gluc 5% 1000ml",
+          "Sabax Gen Main Sol W/gluc 5% (1000ml)"
+        ],
+        "to": "Sabax Gen Main Sol W/gluc 5% 1000ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,5mm X 18mm)",
+          "Xience V - 3,5mm X 18mm"
+        ],
+        "to": "Xience V (3,5mm X 18mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Gluc 2.5% & Sod Chlor 0,45% (1l)",
+          "Sabax Gluc 2.5% & Sod Chlor 0.45% 1l"
+        ],
+        "to": "Sabax Gluc 2.5% & Sod Chlor 0,45% (1l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Physioneal 40 Glucose 2.27% (2l)",
+          "Physioneal 40 Glucose 2.27% 2l"
+        ],
+        "to": "Physioneal 40 Glucose 2.27% (2l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diphenhydramine Expect.",
+          "Diphenhydramine Expect"
+        ],
+        "to": "Diphenhydramine Expect."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,5mm X 28mm)",
+          "Xience V - 3,5mm X 28mm"
+        ],
+        "to": "Xience V (3,5mm X 28mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Sodium Chloride 0,9% (100ml)",
+          "Sabax Sodium Chloride 0.9% (100ml)"
+        ],
+        "to": "Sabax Sodium Chloride 0,9% (100ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Atropine 0.5mg/ml (1ml)",
+          "Sabax Atropine 0.5mg/ml 1ml"
+        ],
+        "to": "Sabax Atropine 0.5mg/ml (1ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,75mm X 23mm)",
+          "Xience V - 2,75mm X 23mm"
+        ],
+        "to": "Xience V (2,75mm X 23mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (2,5mm X 18mm)",
+          "Xience V - 2,5mm X 18mm"
+        ],
+        "to": "Xience V (2,5mm X 18mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Diasol Formula 17 5lt",
+          "Sabax Diasol Formula 17 (5lt)"
+        ],
+        "to": "Sabax Diasol Formula 17 5lt"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Diasol (r) Formula 28 (5lt)",
+          "Sabax Diasol (r) Formula 28 5lt"
+        ],
+        "to": "Sabax Diasol (r) Formula 28 (5lt)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dian N/cal 4.25 Gluc 2l",
+          "Sabax Dian N/cal 4.25 Gluc (2l)"
+        ],
+        "to": "Sabax Dian N/cal 4.25 Gluc 2l"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal Normal Calcium 1.5 Glucose (5l)",
+          "Sabax Dianeal Normal Calcium 1.5 Glucose 5l"
+        ],
+        "to": "Sabax Dianeal Normal Calcium 1.5 Glucose (5l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ceftriaxone -fresenuis 250mg",
+          "Fresenuis Ceftriaxone 250mg"
+        ],
+        "to": "Ceftriaxone -fresenuis 250mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Auro-lamivudine Oral Solution 10 Mg /ml",
+          "Auro-lamivudine Oral Solution 10 Mg / Ml"
+        ],
+        "to": "Auro-lamivudine Oral Solution 10 Mg /ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal 1.5 (1l In 2l)",
+          "Sabax Dianeal 1.5 1l In 2l"
+        ],
+        "to": "Sabax Dianeal 1.5 (1l In 2l)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Berotec 0.1%",
+          "Berotec 0.1 %"
+        ],
+        "to": "Berotec 0.1%"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Alprazolam 1.0 Mg",
+          "Mylan Alprazolam 1,0 Mg"
+        ],
+        "to": "Mylan Alprazolam 1.0 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xience V (3,0mm X 23mm)",
+          "Xience V - 3,0mm X 23mm"
+        ],
+        "to": "Xience V (3,0mm X 23mm)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Acular 0,4%",
+          "Acular 0.4%"
+        ],
+        "to": "Acular 0,4%"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Half-strength Darrows With Glucose 5% (200ml)",
+          "Sabax Half-strength Darrow's With Glucose 5% (200ml)"
+        ],
+        "to": "Sabax Half-strength Darrows With Glucose 5% (200ml)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Product Proprietary Name",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Product Proprietary Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Ringer-lactate 2000ml",
+          "Sabax Ringer-lactate (200ml)",
+          "Sabax Ringer Lactate (200ml)"
+        ],
+        "to": "Sabax Ringer-lactate 2000ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Netromycin 1 5ml Vial",
+          "Netromycin 1.5ml Vial"
+        ],
+        "to": "Netromycin 1 5ml Vial"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Dianeal 2.5% Gluc (2.5) L",
+          "Sabax Dianeal 2.5% Gluc 2.5l"
+        ],
+        "to": "Sabax Dianeal 2.5% Gluc (2.5) L"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Sodium Chloride 0.9% (50ml)",
+          "Sabax Sodium Chloride 0.9% (50 Ml)"
+        ],
+        "to": "Sabax Sodium Chloride 0.9% (50ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sandoz Cefuroxime",
+          "Sandoz-cefuroxime"
+        ],
+        "to": "Sandoz Cefuroxime"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Medazine-s",
+          "Medazine S"
+        ],
+        "to": "Medazine-s"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Depo-medrol 40mg",
+          "Depo Medrol 40mg"
+        ],
+        "to": "Depo-medrol 40mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ran Donepezil 10",
+          "Ran-donepezil 10"
+        ],
+        "to": "Ran Donepezil 10"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Granisetron 1 Mg",
+          "Aspen Granisetron 1mg"
+        ],
+        "to": "Aspen Granisetron 1 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Flemex 20-plus",
+          "Flemex-20 Plus"
+        ],
+        "to": "Flemex 20-plus"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Drl-risperidone 3",
+          "Drl Risperidone 3"
+        ],
+        "to": "Drl-risperidone 3"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cortaject 100 Mg",
+          "Cortaject 100mg"
+        ],
+        "to": "Cortaject 100 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco Omeprazole 20",
+          "Adco-omeprazole 20"
+        ],
+        "to": "Adco Omeprazole 20"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Epirubicin-lemery 50mg",
+          "Epirubicin-lemery 50 Mg"
+        ],
+        "to": "Epirubicin-lemery 50mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Cetirizine 1 Mg/ml",
+          "Aspen Cetirizine 1mg/ml"
+        ],
+        "to": "Aspen Cetirizine 1 Mg/ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Tenopress 50 Mg Tablets",
+          "Tenopress 50mg Tablets"
+        ],
+        "to": "Tenopress 50 Mg Tablets"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ciprogen Iv (400mg/200ml)",
+          "Ciprogen Iv 400 Mg/ 200 Ml"
+        ],
+        "to": "Ciprogen Iv (400mg/200ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Coversyl 4 Mg",
+          "Coversyl 4mg"
+        ],
+        "to": "Coversyl 4 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Omnipaque 300mg I/ml (200ml)",
+          "Omnipaque 300mg I/ml (20ml)"
+        ],
+        "to": "Omnipaque 300mg I/ml (200ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diamicron Mr 30 Mg",
+          "Diamicron Mr 30mg"
+        ],
+        "to": "Diamicron Mr 30 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Drl Citalopram 20",
+          "Drl-citalopram 20"
+        ],
+        "to": "Drl Citalopram 20"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Actilyse 50 Mg",
+          "Actilyse 50mg"
+        ],
+        "to": "Actilyse 50 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Drl Moxifloxacin",
+          "Drl-moxifloxacin"
+        ],
+        "to": "Drl Moxifloxacin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sonke Didanosine 400",
+          "Sonke-didanosine 400"
+        ],
+        "to": "Sonke Didanosine 400"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Viramune 50 Mg/5 Ml",
+          "Viramune 50mg/5ml"
+        ],
+        "to": "Viramune 50 Mg/5 Ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Efavirenz 600",
+          "Cipla-efavirenz 600"
+        ],
+        "to": "Cipla Efavirenz 600"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla-perindopril 8 Mg",
+          "Cipla-perindopril 8mg"
+        ],
+        "to": "Cipla-perindopril 8 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ciprogen Iv (200mg/100ml)",
+          "Ciprogen Iv 200 Mg/100 Ml"
+        ],
+        "to": "Ciprogen Iv (200mg/100ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Novorapid",
+          "Novo Rapid"
+        ],
+        "to": "Novorapid"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lasix 500 Mg",
+          "Lasix 500mg"
+        ],
+        "to": "Lasix 500 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Galvus 50 Mg",
+          "Galvus 50mg"
+        ],
+        "to": "Galvus 50 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-erythromycin Capsules",
+          "Adco Erythromycin Capsules"
+        ],
+        "to": "Adco-erythromycin Capsules"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Ondansetron 4mg/2ml",
+          "Mylan Ondansetron 4 Mg/2 Ml"
+        ],
+        "to": "Mylan Ondansetron 4mg/2ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Physioneal 40 Glucose 1.36% W/v 13,6mg/ml",
+          "Physioneal 40 Glucose 1.36% W/v/13,6 Mg/ml"
+        ],
+        "to": "Physioneal 40 Glucose 1.36% W/v 13,6mg/ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Acular 0.4%(5 Ml Vial)",
+          "Acular 0.4% (5 Ml Vial)"
+        ],
+        "to": "Acular 0.4%(5 Ml Vial)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sleep-eze Pm",
+          "Sleepeze-pm"
+        ],
+        "to": "Sleep-eze Pm"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.9% W/v Sodium Chloride Injection B Braun",
+          "0.9% W/v Sodium Chloride Injectionb Braun"
+        ],
+        "to": "0.9% W/v Sodium Chloride Injection B Braun"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Calcium Chlor 10% 10ml",
+          "Sabax-calcium Chlor 10% (10ml)"
+        ],
+        "to": "Sabax Calcium Chlor 10% 10ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Granisetron 3 Mg/3 Ml",
+          "Mylan Granisetron 3mg/3ml"
+        ],
+        "to": "Mylan Granisetron 3 Mg/3 Ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Triomune-40",
+          "Triomune 40"
+        ],
+        "to": "Triomune-40"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gentamycin Fresenius 20mg/2ml Ampoule",
+          "Gentamycin-fresenius 20 Mg/2 Ml (ampoules)"
+        ],
+        "to": "Gentamycin Fresenius 20mg/2ml Ampoule"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Loxiflam 15 Mg",
+          "Loxiflam 15mg"
+        ],
+        "to": "Loxiflam 15 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Veltex 100cr",
+          "Veltex 100 Cr"
+        ],
+        "to": "Veltex 100cr"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-diclofenac 25mg",
+          "Adco-diclofenac 25 Mg"
+        ],
+        "to": "Adco-diclofenac 25mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ringer's Lactate B Braun",
+          "Ringer's Lactate B.Braun"
+        ],
+        "to": "Ringer's Lactate B Braun"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Granicip 2 Mg",
+          "Granicip 2mg"
+        ],
+        "to": "Granicip 2 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Coralan 7.5mg",
+          "Coralan 7,5 Mg"
+        ],
+        "to": "Coralan 7.5mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Atg Fresenius S Anti-human T-lymphocyte Globulin (rabbit)",
+          "Atg Fresenius S.Anti-human T-lymphocyte Globulin (rabbit)"
+        ],
+        "to": "Atg Fresenius S Anti-human T-lymphocyte Globulin (rabbit)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Anastrozole 1 Mg",
+          "Mylan Anastrozole 1mg"
+        ],
+        "to": "Mylan Anastrozole 1 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Litak-10",
+          "Litak 10"
+        ],
+        "to": "Litak-10"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Duovir And Efavirenz Co-pack",
+          "Cipla-duovir And Efavirenz Co-pack"
+        ],
+        "to": "Cipla Duovir And Efavirenz Co-pack"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-amoclav 625",
+          "Adco Amoclav 625"
+        ],
+        "to": "Adco-amoclav 625"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vectoryl 4mg",
+          "Vectoryl 4 Mg"
+        ],
+        "to": "Vectoryl 4mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Spasmo Canulase",
+          "Spasmo-canulase"
+        ],
+        "to": "Spasmo Canulase"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sosenol 1 5ml",
+          "Sosenol (1.5ml)"
+        ],
+        "to": "Sosenol 1 5ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco Granisetron 3 Mg/3 Ml (3ml Amp)",
+          "Adco Granisetron 3 Mg/3ml (3ml Amp)"
+        ],
+        "to": "Adco Granisetron 3 Mg/3 Ml (3ml Amp)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla-zidovudine",
+          "Cipla Zidovudine"
+        ],
+        "to": "Cipla-zidovudine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Coversyl 10 Mg",
+          "Coversyl 10mg"
+        ],
+        "to": "Coversyl 10 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Acidic Bicarbonate Haemodialysis Concentrate Sw95a",
+          "Acidic Bicarbonate Haemodialysis Concentrate Sw 95a"
+        ],
+        "to": "Acidic Bicarbonate Haemodialysis Concentrate Sw95a"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-captomax 25",
+          "Adco Captomax 25"
+        ],
+        "to": "Adco-captomax 25"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Austell Lisinopril",
+          "Austell-lisinopril"
+        ],
+        "to": "Austell Lisinopril"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Epirubicin-lemery 10mg",
+          "Epirubicin-lemery 10 Mg"
+        ],
+        "to": "Epirubicin-lemery 10mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Synflorix®",
+          "Synflorix ®"
+        ],
+        "to": "Synflorix®"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Austell Simvastatin 20mg",
+          "Austell-simvastatin 20 Mg"
+        ],
+        "to": "Austell Simvastatin 20mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Augmentin Es",
+          "Augmentines"
+        ],
+        "to": "Augmentin Es"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Accord-irinotecan 100",
+          "Accord Irinotecan 100"
+        ],
+        "to": "Accord-irinotecan 100"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Atazor 200",
+          "Atazor-200"
+        ],
+        "to": "Atazor 200"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Austell-fluconazole",
+          "Austell Fluconazole"
+        ],
+        "to": "Austell-fluconazole"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cardugen 1mg",
+          "Cardugen 1 Mg"
+        ],
+        "to": "Cardugen 1mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-sinal Ns",
+          "Adco Sinal Ns"
+        ],
+        "to": "Adco-sinal Ns"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Keysal 10 Mg",
+          "Keysal10 Mg"
+        ],
+        "to": "Keysal 10 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-cefuroxime 250 Mg",
+          "Adco Cefuroxime 250 Mg"
+        ],
+        "to": "Adco-cefuroxime 250 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-retic",
+          "Adco Retic"
+        ],
+        "to": "Adco-retic"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gentamycin Fresenius 40mg/1ml Ampoule",
+          "Gentamycin Fresenius 40mg/1ml (ampoules)"
+        ],
+        "to": "Gentamycin Fresenius 40mg/1ml Ampoule"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Nevirapine",
+          "Cipla-nevirapine"
+        ],
+        "to": "Cipla Nevirapine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Water For Inj(10ml)",
+          "Sabax Water For Inj (10ml)"
+        ],
+        "to": "Sabax Water For Inj(10ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Levofloxacin-winthrop 500",
+          "Levofloxacin Winthrop 500"
+        ],
+        "to": "Levofloxacin-winthrop 500"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Metalyse 8000u",
+          "Metalyse 8 000 U"
+        ],
+        "to": "Metalyse 8000u"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Effortil 10 Mg/1ml",
+          "Effortil 10 Mg/1 Ml"
+        ],
+        "to": "Effortil 10 Mg/1ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Capastat 1g",
+          "Capastat 1 G"
+        ],
+        "to": "Capastat 1g"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Osteobon - 10",
+          "Osteobon-10"
+        ],
+        "to": "Osteobon - 10"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Metalyse 10000u",
+          "Metalyse 10 000 U"
+        ],
+        "to": "Metalyse 10000u"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Streptase 750000 Iu",
+          "Streptase 750 000 Iu"
+        ],
+        "to": "Streptase 750000 Iu"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Valdoxane 25 Mg",
+          "Valdoxane 25mg"
+        ],
+        "to": "Valdoxane 25 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Euvax B (1ml Vial)",
+          "Euvax B(1mlvial)"
+        ],
+        "to": "Euvax B (1ml Vial)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Imeron 350 100ml",
+          "Imeron 350 100 Ml"
+        ],
+        "to": "Imeron 350 100ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Apex-azithromycin 500mg",
+          "Apex-azithromycin 500 Mg"
+        ],
+        "to": "Apex-azithromycin 500mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jopamiron 300 10x10",
+          "Jopamiron 300 10x100"
+        ],
+        "to": "Jopamiron 300 10x10"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Half-strength Darrows With Glucose 5% (1000ml)",
+          "Sabax Half Strength Darrow's With Glucose 5% (1000ml)"
+        ],
+        "to": "Sabax Half-strength Darrows With Glucose 5% (1000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Auro-amoxiclav 625mg",
+          "Auro Amoxiclav 625 Mg"
+        ],
+        "to": "Auro-amoxiclav 625mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Levofloxacin-winthrop 250",
+          "Levofloxacin Winthrop 250"
+        ],
+        "to": "Levofloxacin-winthrop 250"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Combibic 500ml Sol Bc-hf-el 00sa Label - Prod 0004399",
+          "Combibic 500ml Sol Bc-hf-el 00 Sa Label - Prod 0004399"
+        ],
+        "to": "Combibic 500ml Sol Bc-hf-el 00sa Label - Prod 0004399"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Spec-flutamide",
+          "Spec Flutamide"
+        ],
+        "to": "Spec-flutamide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Auro-cefotaxime 1000mg",
+          "Auro Cefotaxime 1000 Mg"
+        ],
+        "to": "Auro-cefotaxime 1000mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Austell Simvastatin 10mg",
+          "Austell-simvastatin 10 Mg"
+        ],
+        "to": "Austell Simvastatin 10mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Premelle Cycle-5",
+          "Premelle-cycle 5"
+        ],
+        "to": "Premelle Cycle-5"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lamitor 200",
+          "Lamitor-200"
+        ],
+        "to": "Lamitor 200"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Protos 2g",
+          "Protos 2 G"
+        ],
+        "to": "Protos 2g"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Meropenem 500mg",
+          "Aspen Meropenem 500 Mg"
+        ],
+        "to": "Aspen Meropenem 500mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Half-strength Darrows With Glucose 5% (200ml)",
+          "Sabax Half Strength Darrow's With Glucose 5% (200ml)"
+        ],
+        "to": "Sabax Half-strength Darrows With Glucose 5% (200ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Drl Citalopram 40",
+          "Drl-citalopram 40"
+        ],
+        "to": "Drl Citalopram 40"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Lamivudine 150mg",
+          "Aspen Lamivudine 150 Mg"
+        ],
+        "to": "Aspen Lamivudine 150mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Oseltamivir",
+          "Cipla-oseltamivir"
+        ],
+        "to": "Cipla Oseltamivir"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla-lamivudine",
+          "Cipla Lamivudine"
+        ],
+        "to": "Cipla-lamivudine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Clarithromycin 500mg",
+          "Mylan Clarithromycin 500 Mg"
+        ],
+        "to": "Mylan Clarithromycin 500mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Atazor 150",
+          "Atazor-150"
+        ],
+        "to": "Atazor 150"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Caloxa 50 Mg",
+          "Caloxa 50mg"
+        ],
+        "to": "Caloxa 50 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Depo Medrol With Lidocaine",
+          "Depo-medrol With Lidocaine"
+        ],
+        "to": "Depo Medrol With Lidocaine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Itraconazole 100mg",
+          "Mylan Itraconazole 100 Mg"
+        ],
+        "to": "Mylan Itraconazole 100mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arrow Ceftriaxone Sodium 1g",
+          "Arrow Ceftriaxone Sodium 1 G"
+        ],
+        "to": "Arrow Ceftriaxone Sodium 1g"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arrow Ceftriaxone Sodium 500 Mg",
+          "Arrow Ceftriaxone Sodium 500mg"
+        ],
+        "to": "Arrow Ceftriaxone Sodium 500 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pantocid 40 Mg Injection (10 Ml)",
+          "Pantocid 40mg Injection(10ml)"
+        ],
+        "to": "Pantocid 40 Mg Injection (10 Ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Drl-risperidone 0.5",
+          "Drl Risperidone 0.5"
+        ],
+        "to": "Drl-risperidone 0.5"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diprivan 1% 50ml (vial)",
+          "Diprivan 1% 50ml(vial)"
+        ],
+        "to": "Diprivan 1% 50ml (vial)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Multihance 10 X 20ml",
+          "Multihance 10 X 20 Ml"
+        ],
+        "to": "Multihance 10 X 20ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Combibic 500ml Sol Bc-hf-el 02sa Label - Prod 0004398",
+          "Combibic 500ml Sol Bc-hf-el 02 Sa Label - Prod 0004398"
+        ],
+        "to": "Combibic 500ml Sol Bc-hf-el 02sa Label - Prod 0004398"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ilotycin A",
+          "Ilotycin-a"
+        ],
+        "to": "Ilotycin A"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bio-heparin 5ml",
+          "Bio-heparin 5 Ml"
+        ],
+        "to": "Bio-heparin 5ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Vinorelbin 50 Mg/5 Ml",
+          "Aspen Vinorelbin 50mg/5ml"
+        ],
+        "to": "Aspen Vinorelbin 50 Mg/5 Ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diaglucide Mr 30mg",
+          "Diaglucide Mr 30 Mg"
+        ],
+        "to": "Diaglucide Mr 30mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Yelllow",
+          "Yellow"
+        ],
+        "to": "Yelllow"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Meropenem 1g",
+          "Aspen Meropenem 1 G"
+        ],
+        "to": "Aspen Meropenem 1g"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Medazine-t",
+          "Medazine T"
+        ],
+        "to": "Medazine-t"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Diva-35",
+          "Diva 35"
+        ],
+        "to": "Diva-35"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Celestone Soluspan Injection (vial)",
+          "Celestone Soluspan Injection(vial)"
+        ],
+        "to": "Celestone Soluspan Injection (vial)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prexum 10 Mg",
+          "Prexum 10mg"
+        ],
+        "to": "Prexum 10 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Ondansetron 8mg/4ml",
+          "Mylan Ondansetron 8 Mg /4 Ml"
+        ],
+        "to": "Mylan Ondansetron 8mg/4ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Buscopan Compositum 20mg / 2.5 G",
+          "Buscopan Compositum 20 Mg/2.5 G"
+        ],
+        "to": "Buscopan Compositum 20mg / 2.5 G"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-loperamide",
+          "Adco Loperamide"
+        ],
+        "to": "Adco-loperamide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Triaphin 1000 (vail 3.5ml)",
+          "Triaphin 1000(vail 3.5ml)"
+        ],
+        "to": "Triaphin 1000 (vail 3.5ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Auro-amoxiclav 1000mg",
+          "Auro Amoxiclav 1000 Mg"
+        ],
+        "to": "Auro-amoxiclav 1000mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Foratec Dp Caps",
+          "Foratec Dp-caps"
+        ],
+        "to": "Foratec Dp Caps"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Auro-abacavir Oral Solution 20mg/ml",
+          "Auro-abacavir Oral Solution 20 Mg/ml"
+        ],
+        "to": "Auro-abacavir Oral Solution 20mg/ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Midazolam 50mg/10ml",
+          "Aspen Midazolam 50 Mg/10 Ml"
+        ],
+        "to": "Aspen Midazolam 50mg/10ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Half-strength Darrows With Glucose 5% (500ml)",
+          "Sabax Half Strength Darrow's With Glucose 5% (500ml)"
+        ],
+        "to": "Sabax Half-strength Darrows With Glucose 5% (500ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Jopamiron 300 100 Ml",
+          "Jopamiron 300 10ml"
+        ],
+        "to": "Jopamiron 300 100 Ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Reli Slim",
+          "Relislim"
+        ],
+        "to": "Reli Slim"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cytigem 200 Mg",
+          "Cytigem 200mg"
+        ],
+        "to": "Cytigem 200 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gyno Daktarin",
+          "Gyno-daktarin"
+        ],
+        "to": "Gyno Daktarin"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Betaroxime",
+          "Betaroxime T"
+        ],
+        "to": "Betaroxime"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Buscopan Compositum 10 Mg / 250 Mg",
+          "Buscopan Compositum 10 Mg/250 Mg"
+        ],
+        "to": "Buscopan Compositum 10 Mg / 250 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Curam Bd",
+          "Curambd"
+        ],
+        "to": "Curam Bd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Lucentis® 10 Mg/ml Solution For Injection",
+          "Lucentis® 10mg/ml Solution For Injection"
+        ],
+        "to": "Lucentis® 10 Mg/ml Solution For Injection"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-cefuroxime 750mg",
+          "Adco Cefuroxime 750mg"
+        ],
+        "to": "Adco-cefuroxime 750mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-alzam 0.25mg",
+          "Adco-alzam 0.25 Mg"
+        ],
+        "to": "Adco-alzam 0.25mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Veltex 75cr",
+          "Veltex 75 Cr"
+        ],
+        "to": "Veltex 75cr"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Depo Testosterone 100mg",
+          "Depo-testosterone 100mg"
+        ],
+        "to": "Depo Testosterone 100mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Ringer-lactate (1000ml)",
+          "Sabax Ringer Lactate (1000ml)"
+        ],
+        "to": "Sabax Ringer-lactate (1000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Optiray 300-50 Ml",
+          "Optiray 300-50ml"
+        ],
+        "to": "Optiray 300-50 Ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Vinorelbin 10 Mg/1 Ml",
+          "Aspen Vinorelbin 10mg/1ml"
+        ],
+        "to": "Aspen Vinorelbin 10 Mg/1 Ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Indapamide 2.5mg",
+          "Mylan Indapamide 2.5 Mg"
+        ],
+        "to": "Mylan Indapamide 2.5mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Drl-risperidone 1",
+          "Drl Risperidone 1"
+        ],
+        "to": "Drl-risperidone 1"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Novomix 30 Flexpen 3ml",
+          "Novomix 30 Flexpen 3 Ml"
+        ],
+        "to": "Novomix 30 Flexpen 3ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Drl-risperidone 2",
+          "Drl Risperidone 2"
+        ],
+        "to": "Drl-risperidone 2"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Depo Medrol 80mg",
+          "Depo-medrol 80mg"
+        ],
+        "to": "Depo Medrol 80mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ran Donepezil 5",
+          "Ran-donepezil 5"
+        ],
+        "to": "Ran Donepezil 5"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Methylprednisolone 1 000",
+          "Mylan Methylprednisolone 1000"
+        ],
+        "to": "Mylan Methylprednisolone 1 000"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla-loperamide",
+          "Cipla Loperamide"
+        ],
+        "to": "Cipla-loperamide"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nolvadex-d",
+          "Nolvadex- D"
+        ],
+        "to": "Nolvadex-d"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Humalog Mix 50",
+          "Humalog Mix50"
+        ],
+        "to": "Humalog Mix 50"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco Efavirenz 50mg",
+          "Adco Efavirenz 50 Mg"
+        ],
+        "to": "Adco Efavirenz 50mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan Fluconazole 150mg",
+          "Mylan Fluconazole 150 Mg"
+        ],
+        "to": "Mylan Fluconazole 150mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Auro-amoxiclav 375mg",
+          "Auro Amoxiclav 375 Mg"
+        ],
+        "to": "Auro-amoxiclav 375mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco Granisetron 1 Mg/1 Ml (1ml Amp)",
+          "Adco Granisetron 1 Mg/1ml (1ml Amp)"
+        ],
+        "to": "Adco Granisetron 1 Mg/1 Ml (1ml Amp)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Gentamicin Injection 80mg/2ml",
+          "Aspen Gentamicin Injection 80 Mg/ 2 Ml"
+        ],
+        "to": "Aspen Gentamicin Injection 80mg/2ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adco-captomax 50",
+          "Adco Captomax 50"
+        ],
+        "to": "Adco-captomax 50"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Inderal La 80",
+          "Inderal La-80"
+        ],
+        "to": "Inderal La 80"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Olexar-10",
+          "Olexar 10"
+        ],
+        "to": "Olexar-10"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arrow-lamotrigine",
+          "Arrow Lamotrigine"
+        ],
+        "to": "Arrow-lamotrigine"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Lamivudine Oral Solution",
+          "Cipla-lamivudine Oral Solution"
+        ],
+        "to": "Cipla Lamivudine Oral Solution"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sabax Ringer-lactate (3000ml)",
+          "Sabax Ringer Lactate (3000ml)"
+        ],
+        "to": "Sabax Ringer-lactate (3000ml)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Nizoral 200mg",
+          "Nizoral 200 Mg"
+        ],
+        "to": "Nizoral 200mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ciprogen 250 Mg",
+          "Ciprogen 250mg"
+        ],
+        "to": "Ciprogen 250 Mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gentamycin Fresenius 80mg/2ml Ampoule",
+          "Gentamycin Fresenius 80mg/2ml (ampoules)"
+        ],
+        "to": "Gentamycin Fresenius 80mg/2ml Ampoule"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Efavirenz 600mg",
+          "Aspen Efavirenz 600 Mg"
+        ],
+        "to": "Aspen Efavirenz 600mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Tenofovir 300",
+          "Cipla-tenofovir 300"
+        ],
+        "to": "Cipla Tenofovir 300"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Suplasyn® (2ml Pre-filled Syringe)",
+          "Suplasyn® (2 Ml Pre-filled Syringe)"
+        ],
+        "to": "Suplasyn® (2ml Pre-filled Syringe)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cytigem 1 G",
+          "Cytigem 1g"
+        ],
+        "to": "Cytigem 1 G"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Altosec 40 Mg/10ml",
+          "Altosec 40 Mg/10 Ml"
+        ],
+        "to": "Altosec 40 Mg/10ml"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Accord Gemcitabine 200mg",
+          "Accordgemcitabine 200mg"
+        ],
+        "to": "Accord Gemcitabine 200mg"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Haemosolvatefactor Viii 300 Iu",
+          "Haemosolvate Factor Viii 300 Iu"
+        ],
+        "to": "Haemosolvatefactor Viii 300 Iu"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Humalog Mix 25",
+          "Humalog Mix25"
+        ],
+        "to": "Humalog Mix 25"
+      }
+    ]
+  }
+]
