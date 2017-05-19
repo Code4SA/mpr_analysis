@@ -1,7 +1,15 @@
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, Float, String, Date, Boolean, ForeignKey, UniqueConstraint
+from sqlalchemy import (
+    Column,
+    Integer,
+    Float,
+    String,
+    Date,
+    ForeignKey,
+    UniqueConstraint,
+)
 from sqlalchemy.orm import relationship
-
+import re
 
 Base = declarative_base()
 
@@ -17,8 +25,7 @@ class Product(Base):
     pack_size = Column(Float, nullable=False)
     is_generic = Column(String)
     num_packs = Column(Integer)
-    ingredients = relationship("ProductIngredient",
-                               back_populates="product")
+    ingredients = relationship("ProductIngredient", back_populates="product")
     prices = relationship("ProductSEP", back_populates="product")
 
     __table_args__ = (
@@ -28,8 +35,15 @@ class Product(Base):
     # related products
     # ----------------
     # products that have the same set of ingredients with the same strength
-    #@property
-    #def equivalence_key(self):
+    @property
+    def equivalence_key(self):
+        ingredients = []
+        for pi in self.ingredients:
+            fields = [pi.ingredient.name, pi.strength, pi.ingredient.unit]
+            id = re.sub("[^\w/%-]", "-", "-".join(fields))
+            id = id.lower()
+            ingredients.append(id)
+        return "-".join(sorted(ingredients))
 
     def __repr__(self):
         return ("<Product: %s>" % self.name).encode('utf-8')
