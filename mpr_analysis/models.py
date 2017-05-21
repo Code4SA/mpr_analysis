@@ -45,6 +45,19 @@ class Product(Base):
             ingredients.append(id)
         return "-".join(sorted(ingredients))
 
+    @property
+    def unique_name(self):
+        return "%s: %s (%s %s %d %d %s %s)" % (
+            self.is_generic,
+            self.name,
+            self.regno,
+            self.nappi_code,
+            self.pack_size,
+            self.num_packs,
+            self.schedule,
+            self.dosage_form
+        )
+
     def __repr__(self):
         return ("<Product: %s>" % self.name).encode('utf-8')
 
@@ -91,4 +104,4 @@ class ProductSEP(Base):
     product = relationship("Product", back_populates="prices")
 
     def __repr__(self):
-        return "<ProductSEP: %s %s>" % (self.product.name, self.sep)
+        return "<ProductSEP: %s %s %s>" % (self.product.name, self.effective_date.strftime("%Y-%m-%d"), self.sep)
