@@ -39,12 +39,17 @@ def float_or_none(x):
         return None
 
 
-def get_or_create(session, model, as_dict, exclude=[]):
+def get_or_create(session, model, as_dict, update=[]):
     search_args = copy(as_dict)
-    for k in exclude:
+    for k in update:
         del search_args[k]
     instance = session.query(model).filter_by(**search_args).first()
     if instance:
+        for attr_name in update:
+            old_val = getattr(instance, attr_name)
+            new_val = as_dict[attr_name]
+            if new_val and new_val != old_val:
+                setattr(instance, attr_name, new_val)
         return instance, False
     else:
         instance = model(**as_dict)
@@ -165,7 +170,7 @@ def main():
         del p['sep']
         del p['effective_date']
 
-        product, new_product = get_or_create(session, Product, p, ['name'])
+        product, new_product = get_or_create(session, Product, p, ['name', 'is_generic'])
         product_count += 1
         if new_product:
             new_product_count += 1
