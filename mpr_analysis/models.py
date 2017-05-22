@@ -27,6 +27,7 @@ class Product(Base):
     num_packs = Column(Integer)
     ingredients = relationship("ProductIngredient", back_populates="product")
     prices = relationship("ProductSEP", back_populates="product")
+    equivalence_key = Column(String)
 
     __table_args__ = (
         UniqueConstraint('regno', 'nappi_code', 'pack_size', 'num_packs', 'schedule', 'is_generic', 'dosage_form', name='product_unique'),
@@ -36,7 +37,7 @@ class Product(Base):
     # ----------------
     # products that have the same set of ingredients with the same strength
     @property
-    def equivalence_key(self):
+    def _equivalence_key(self):
         ingredients = []
         for pi in self.ingredients:
             fields = [pi.ingredient.name, pi.strength, pi.ingredient.unit]
@@ -47,8 +48,12 @@ class Product(Base):
 
     @property
     def unique_name(self):
+        if self.is_generic is None:
+            is_generic = '?'
+        else:
+            is_generic = self.is_generic
         return "%s: %s (%s %s %d %d %s %s)" % (
-            self.is_generic,
+            is_generic,
             self.name,
             self.regno,
             self.nappi_code,
@@ -102,6 +107,14 @@ class ProductSEP(Base):
     effective_date = Column(Date)
     product_id = Column(Integer, ForeignKey('product.id'))
     product = relationship("Product", back_populates="prices")
+
+    @property
+    def cost_per_unit(self):
+        if self.product.pack_size > 0:
+            qty = self.product.pack_size * self.product.num_packs
+        else:
+            qty = self.product.num_packs
+        return self.sep / qty
 
     def __repr__(self):
         return "<ProductSEP: %s %s %s>" % (self.product.name, self.effective_date.strftime("%Y-%m-%d"), self.sep)
