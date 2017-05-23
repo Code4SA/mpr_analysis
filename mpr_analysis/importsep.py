@@ -66,6 +66,8 @@ def parse(filename):
     skip_ingredients = False
     latest_date = None
     for idx in range(0, worksheet.nrows):
+        applicant_license_no = worksheet.cell_value(idx, 0)
+        applicant_name = worksheet.cell_value(idx, 1)
         nappi_code = worksheet.cell_value(idx, 3)
         regno = worksheet.cell_value(idx, 2).lower()
         pack_size = int_or_none(worksheet.cell_value(idx, 11))
@@ -114,6 +116,8 @@ def parse(filename):
                     continue
 
             product = {
+                "applicant_name": applicant_name.strip(),
+                "applicant_licence_no": applicant_license_no.strip(),
                 "nappi_code" : nappi_code.strip(),
                 "regno" : regno.strip(),
                 "schedule" : worksheet.cell_value(idx, 5),
@@ -170,7 +174,7 @@ def main():
         del p['sep']
         del p['effective_date']
 
-        product, new_product = get_or_create(session, Product, p, ['name', 'is_generic'])
+        product, new_product = get_or_create(session, Product, p, ['name', 'is_generic', 'applicant_licence_no', 'applicant_name'])
         product_count += 1
         if new_product:
             new_product_count += 1

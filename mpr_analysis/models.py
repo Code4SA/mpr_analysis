@@ -17,6 +17,8 @@ Base = declarative_base()
 class Product(Base):
     __tablename__ = 'product'
     id = Column(Integer, primary_key=True)
+    applicant_licence_no = Column(String, nullable=False)
+    applicant_name = Column(String, nullable=False)
     nappi_code = Column(String, nullable=False)
     regno = Column(String, nullable=False)
     name = Column(String, nullable=False)
@@ -30,7 +32,7 @@ class Product(Base):
     equivalence_key = Column(String)
 
     __table_args__ = (
-        UniqueConstraint('regno', 'nappi_code', 'pack_size', 'num_packs', 'schedule', 'is_generic', 'dosage_form', name='product_unique'),
+        UniqueConstraint('regno', 'nappi_code', 'pack_size', 'num_packs', 'schedule', 'dosage_form', name='product_unique'),
     )
 
     # related products
@@ -47,13 +49,18 @@ class Product(Base):
         return "-".join(sorted(ingredients))
 
     @property
+    def short_applicant_name(self):
+        return " ".join(word[:5] for word in self.applicant_name.split(" "))
+
+    @property
     def unique_name(self):
         if self.is_generic is None:
             is_generic = '?'
         else:
             is_generic = self.is_generic
-        return "%s: %s (%s %s %d %d %s %s)" % (
+        return "%s: %s - %s (%s %s %d %d %s %s)" % (
             is_generic,
+            self.short_applicant_name,
             self.name,
             self.regno,
             self.nappi_code,
