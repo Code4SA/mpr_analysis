@@ -78,6 +78,15 @@ class Product(Base):
     def __repr__(self):
         return ("<Product: %s>" % self.name).encode('utf-8')
 
+    def __lt__(self, other):
+        if self.is_generic == other.is_generic:
+            return self.unique_name < other.unique_name
+        elif self.is_generic is None: return True
+        elif other.is_generic is None: return False
+        elif self.is_generic == 'Originator': return True
+        else: return False
+
+
 
 class Ingredient(Base):
     __tablename__ = 'ingredient'
