@@ -50,7 +50,12 @@ class Product(Base):
 
     @property
     def short_applicant_name(self):
-        return " ".join(word[:5] for word in self.applicant_name.split(" "))
+        shorts = []
+        for word in self.applicant_name.split(" "):
+            if len(word) > 5:
+                word = word[:5] + "."
+            shorts.append(word)
+        return " ".join(shorts)
 
     @property
     def unique_name(self):
