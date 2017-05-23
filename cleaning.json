@@ -4602,5 +4602,1822 @@
         "to": "Humalog Mix 25"
       }
     ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Applicant Name using expression value.trim()",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Applicant Name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Applicant Name using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Applicant Name",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Applicant Name",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Applicant Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ranbaxy (S.A.) (Pty) Ltd",
+          "Ranbaxy (SA) (Pty) Ltd",
+          "Ranbaxy (S.A) (Pty) Ltd",
+          "Ranbaxy (SA) (PTY) LTD",
+          "Ranbaxy (SA) (Pty) LTD",
+          "Ranbaxy S.A (Pty) Ltd",
+          "Ranbaxy SA (Pty) Ltd",
+          "Ranbaxy SA (PTY) LTD",
+          "RANBAXY SA (PTY) LTD"
+        ],
+        "to": "Ranbaxy (S.A.) (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmacare Ltd. - Woodmead",
+          "Pharmacare Ltd., Woodmead",
+          "Pharmacare Ltd, Woodmead",
+          "Pharmacare Ltd. Woodmead",
+          "Pharmacare. Ltd. - Woodmead"
+        ],
+        "to": "Pharmacare Ltd. - Woodmead"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mylan (Pty) Ltd",
+          "MYLAN (PTY) LTD",
+          "Mylan Pty Ltd",
+          "Mylan ( Pty ) Ltd",
+          "Mylan (pty) ltd"
+        ],
+        "to": "Mylan (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "LeBasi Pharmaceuticals CC",
+          "Lebasi Pharmaceuticals CC",
+          "LeBasi Pharmaceuticals cc",
+          "Lebasi Pharmaceuticals cc"
+        ],
+        "to": "LeBasi Pharmaceuticals CC"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmafrica (Pty) Ltd.",
+          "PHARMAFRICA (PTY) LTD.",
+          "Pharmafrica (Pty) Ltd",
+          "Pharmafrica (PTY) LTD"
+        ],
+        "to": "Pharmafrica (Pty) Ltd."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Watson Pharma No1 (Pty) Ltd",
+          "Watson pharma No1 (Pty) Ltd",
+          "Watson Pharma No.1 (Pty) Ltd",
+          "Watson Pharma No.1 (Pty) ltd"
+        ],
+        "to": "Watson Pharma No1 (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Medpro (Pty) Ltd",
+          "Cipla Medpro (PTY) LTD",
+          "Cipla Medpro (PTY) Ltd",
+          "Cipla Medpro (Pty) LTD"
+        ],
+        "to": "Cipla Medpro (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Novartis SA (Pty) Ltd",
+          "Novartis SA (Pty) Ltd.",
+          "Novartis S.A (Pty) Ltd",
+          "Novartis SA (pty) Ltd"
+        ],
+        "to": "Novartis SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zydus Healthcare SA (Pty) Ltd",
+          "Zydus Healthcare S.A. (Pty) Ltd.",
+          "Zydus Healthcare S.A. (Pty) Ltd",
+          "Zydus Healthcare S.A (Pty) Ltd"
+        ],
+        "to": "Zydus Healthcare SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Astrazeneca Pharmaceuticals (Pty) Ltd- Bryanston",
+          "Astrazeneca Pharmaceuticals (Pty) Ltd - Bryanston",
+          "AstraZeneca Pharmaceuticals- (Pty) LTD- Bryanston",
+          "AstraZeneca Pharmaceuticals- (Pty) Ltd- Bryanston"
+        ],
+        "to": "Astrazeneca Pharmaceuticals (Pty) Ltd- Bryanston"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pfizer Laboratories (Pty) Ltd",
+          "Pfizer Laboratories Pty (Ltd)",
+          "Pfizer Laboratories Pty Ltd"
+        ],
+        "to": "Pfizer Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Specpharm (Pty) Ltd",
+          "Specpharm ( Pty) Ltd",
+          "Specpharm Pty Ltd"
+        ],
+        "to": "Specpharm (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmacare Limited, Woodmead",
+          "Pharmacare Limited - Woodmead",
+          "Pharmacare Limited , Woodmead"
+        ],
+        "to": "Pharmacare Limited, Woodmead"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GlaxoSmithKline (Pty) Ltd",
+          "GlaxoSmithKline (Pty.) Ltd",
+          "GlaxoSmithkline (Pty) Ltd"
+        ],
+        "to": "GlaxoSmithKline (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sonke Pharmaceuticals (Pty) Ltd",
+          "Sonke Pharmaceuticals (PTY) LTD",
+          "Sonke Pharmaceuticals (pty) Ltd"
+        ],
+        "to": "Sonke Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Novartis South Africa (Pty) Ltd",
+          "NOVARTIS SOUTH AFRICA (PTY) LTD",
+          "Novartis South Africa (Pty) Ltd."
+        ],
+        "to": "Novartis South Africa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Medpro Pharmaceutica (Pty) Ltd",
+          "Medpro Pharmaceutica (PTY) Ltd",
+          "Medpro Pharmaceutica (PTY) LTD"
+        ],
+        "to": "Medpro Pharmaceutica (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eli Lilly (SA) (Pty) Ltd",
+          "Eli Lilly SA (Pty) Ltd",
+          "Eli Lilly (S.A.) (Pty) Ltd"
+        ],
+        "to": "Eli Lilly (SA) (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Life Sciences (Pty) Ltd",
+          "Cipla Life Sciences (PTY) LTD",
+          "Cipla Life Sciences (PTY) Ltd"
+        ],
+        "to": "Cipla Life Sciences (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glenmark Pharmaceuticals South Africa (Pty) Ltd",
+          "GLENMARK PHARMACEUTICALS SOUTH AFRICA (PTY) LTD",
+          "GLENMARK PHARMACEUTICALS SOUTH AFRICA (Pty) Ltd"
+        ],
+        "to": "Glenmark Pharmaceuticals South Africa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sandoz SA Pty Ltd",
+          "Sandoz SA (Pty) Ltd",
+          "Sandoz Sa Pty Ltd"
+        ],
+        "to": "Sandoz SA Pty Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmaplan (Pty) Ltd",
+          "Pharmaplan (PTY) Ltd",
+          "Pharmaplan Pty Ltd"
+        ],
+        "to": "Pharmaplan (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "B.Braun Medical (Pty) Ltd",
+          "B.Braun Medical Pty Ltd",
+          "B.Braun Medical Pty) Ltd"
+        ],
+        "to": "B.Braun Medical (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Biotech Laboratories (Pty) Ltd",
+          "Biotech Laboratories Pty Ltd",
+          "Biotech Laboratories PTY LTD"
+        ],
+        "to": "Biotech Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sandoz-Hexal (a Novartis company)",
+          "Sandoz-Hexal (A Novartis Company)"
+        ],
+        "to": "Sandoz-Hexal (a Novartis company)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Janssen Pharmaceutica (Pty) Ltd",
+          "Janssen Pharmaceutica Pty Ltd"
+        ],
+        "to": "Janssen Pharmaceutica (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adcock Ingram Ltd",
+          "Adcock Ingram Ltd."
+        ],
+        "to": "Adcock Ingram Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mirren (Pty) Ltd",
+          "Mirren (Pty) Ltd."
+        ],
+        "to": "Mirren (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Genzyme Biopharmaceuticals SA (Pty) Ltd",
+          "Genzyme Biopharmaceuticals Sa (Pty) Ltd"
+        ],
+        "to": "Genzyme Biopharmaceuticals SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dr Reddy's Laboratories (Pty) Ltd",
+          "Dr Reddys Laboratories (Pty) Ltd"
+        ],
+        "to": "Dr Reddy's Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schering-Plough (Pty) Ltd - (Site 1)",
+          "Schering-Plough (Pty) Ltd - Site 1"
+        ],
+        "to": "Schering-Plough (Pty) Ltd - (Site 1)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bristol Myers Squibb",
+          "Bristol - Myers Squibb"
+        ],
+        "to": "Bristol Myers Squibb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "RANBAXY SA",
+          "Ranbaxy S.A"
+        ],
+        "to": "RANBAXY SA"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Unicorn Pharmaceuticals (Pty) Ltd",
+          "Unicorn Pharmaceuticals (pty) Ltd"
+        ],
+        "to": "Unicorn Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schering-Plough (Pty) Ltd",
+          "SCHERING-PLOUGH (PTY) LTD"
+        ],
+        "to": "Schering-Plough (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurobindo Pharma (Pty) Ltd",
+          "Aurobindo Pharma Pty Ltd"
+        ],
+        "to": "Aurobindo Pharma (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Actor Pharma (Pty) Ltd",
+          "ACTOR PHARMA (PTY) LTD"
+        ],
+        "to": "Actor Pharma (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Johnson & Johnson (Pty) Ltd",
+          "Johnson & Johnson Pty (Ltd)"
+        ],
+        "to": "Johnson & Johnson (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Novagen Pharma (Pty) Ltd",
+          "NOVAGEN PHARMA (PTY) LTD"
+        ],
+        "to": "Novagen Pharma (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmaco Distribution (Pty) Ltd",
+          "PHARMACO Distribution (Pty) Ltd."
+        ],
+        "to": "Pharmaco Distribution (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aspen Pharmacare Ltd.",
+          "Aspen Pharmacare Ltd"
+        ],
+        "to": "Aspen Pharmacare Ltd."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Biogaran South Africa (Pty) Ltd",
+          "Biogaran South Africa (Pty) Ltd."
+        ],
+        "to": "Biogaran South Africa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alcon Laboratories (Sa) (Pty) Ltd",
+          "Alcon Laboratories (SA) (Pty) Ltd"
+        ],
+        "to": "Alcon Laboratories (Sa) (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Batswadi Pharmaceuticals (Pty) Ltd",
+          "Batswadi Pharmaceuticals (Pty) Ltd (Pty) Ltd"
+        ],
+        "to": "Batswadi Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Meyerzall Laboratories (Pty) Ltd",
+          "MeyerZall Laboratories (Pty) Ltd"
+        ],
+        "to": "Meyerzall Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MERCK GENERICS RSA (PTY) LTD",
+          "Merck Generics RSA (Pty) Ltd"
+        ],
+        "to": "MERCK GENERICS RSA (PTY) LTD"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glaxosmithkline South Africa (Pty) Ltd - Cape Town",
+          "GlaxoSmithKline South Africa (Pty) Ltd - Cape Town"
+        ],
+        "to": "Glaxosmithkline South Africa (Pty) Ltd - Cape Town"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Medicine Developers International CC",
+          "MEDICINE DEVELOPERS INTERNATIONAL CC"
+        ],
+        "to": "Medicine Developers International CC"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Abbott Laboratories SA Pty Ltd",
+          "Abbott Laboratories SA Pty (Ltd)"
+        ],
+        "to": "Abbott Laboratories SA Pty Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Reckitt Benckiser Pharmaceuticals Pty (Ltd)",
+          "Reckitt Benckiser Pharmaceuticals (Pty) Ltd"
+        ],
+        "to": "Reckitt Benckiser Pharmaceuticals Pty (Ltd)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "GE Healthcare (Pty) Ltd",
+          "GE HEALTHCARE (PTY) LTD"
+        ],
+        "to": "GE Healthcare (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "iThemba LABS",
+          "iThemba Labs"
+        ],
+        "to": "iThemba LABS"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Merck (Pty) Ltd",
+          "MERCK (PTY) LTD"
+        ],
+        "to": "Merck (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ranbaxy S.A (Pty)Ltd",
+          "Ranbaxy SA (Pty)(Ltd)"
+        ],
+        "to": "Ranbaxy S.A (Pty)Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Orthomedics Pharmaceuticals (Pty) Ltd",
+          "ORTHOMEDICS PHARMACEUTICALS (PTY) LTD"
+        ],
+        "to": "Orthomedics Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AbbVie (Pty) Ltd",
+          "Abbvie (Pty) Ltd"
+        ],
+        "to": "AbbVie (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Akacia Health Care (Pty) Ltd",
+          "AKACIA HEALTH CARE (PTY) LTD"
+        ],
+        "to": "Akacia Health Care (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MSD(Pty)Ltd",
+          "MSD(PTY)LTD"
+        ],
+        "to": "MSD(Pty)Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Akacia HealthCare (Pty) Ltd",
+          "AKACIA HEALTHCARE (Pty) Ltd"
+        ],
+        "to": "Akacia HealthCare (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dezzo Trading 392 (Pty) Limited T/A Indo Pharma",
+          "DEZZO TRADING 392 (PTY) LIMITED T/A INDO PHARMA"
+        ],
+        "to": "Dezzo Trading 392 (Pty) Limited T/A Indo Pharma"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharma-Q (Pty) Ltd",
+          "PHARMA-Q (PTY) LTD"
+        ],
+        "to": "Pharma-Q (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Axim Pharmaceuticals (Pty) Ltd",
+          "AXIM Pharmaceuticals (Pty) Ltd"
+        ],
+        "to": "Axim Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Brunel Laboratoria (Pty) Ltd",
+          "Brunel Laboratoria (Pty) Ltd."
+        ],
+        "to": "Brunel Laboratoria (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sanofi Aventis South Africa",
+          "sanofi aventis South Africa"
+        ],
+        "to": "Sanofi Aventis South Africa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Astrazeneca Pharmaceuticals (Pty) Ltd - Sunninghill",
+          "Astrazeneca Pharmaceuticals (Pty) Ltd- Sunninghill"
+        ],
+        "to": "Astrazeneca Pharmaceuticals (Pty) Ltd - Sunninghill"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MSD (Pty) Ltd",
+          "MSD (PTY) LTD"
+        ],
+        "to": "MSD (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fresenius Kabi Sa (Pty) Ltd",
+          "Fresenius Kabi SA (Pty) Ltd"
+        ],
+        "to": "Fresenius Kabi Sa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mundipharma (Pty) Ltd",
+          "Mundipharma (Pty) Ltd."
+        ],
+        "to": "Mundipharma (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Galderma Laboratories SA (Pty) Ltd",
+          "Galderma Laboratories Sa (Pty) Ltd"
+        ],
+        "to": "Galderma Laboratories SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NTP Radioisotopes (Pty) Ltd",
+          "NTP Radioisotopes (Pty) Ltd."
+        ],
+        "to": "NTP Radioisotopes (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Camox Pharmaceuticals (Pty) Ltd",
+          "Camox Pharmaceuticals (PTY) LTD"
+        ],
+        "to": "Camox Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dr.Reddys Laboratories (Pty) Ltd",
+          "Dr.Reddy's Laboratories (Pty) Ltd"
+        ],
+        "to": "Dr.Reddys Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dr Reddys Labs (Pty) Ltd",
+          "Dr Reddy's Labs (Pty) Ltd"
+        ],
+        "to": "Dr Reddys Labs (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adcock Ingram Limited",
+          "Adcock Ingram limited"
+        ],
+        "to": "Adcock Ingram Limited"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Novo Nordisk (Pty) Ltd",
+          "Novo Nordisk (PTY) LTD"
+        ],
+        "to": "Novo Nordisk (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Austell Laboratories (Pty) Ltd",
+          "Austell Laboratories (PTY) Ltd"
+        ],
+        "to": "Austell Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Servier Laboratories Sa (Pty) Ltd",
+          "Servier Laboratories SA (Pty) Ltd"
+        ],
+        "to": "Servier Laboratories Sa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AstraZeneca Pharmaceuticals (Pty) Ltd",
+          "Astrazeneca Pharmaceuticals (Pty) Ltd"
+        ],
+        "to": "AstraZeneca Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Brimpharm Sa (Pty) Ltd",
+          "Brimpharm SA (Pty) Ltd"
+        ],
+        "to": "Brimpharm Sa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmacare Ltd.",
+          "Pharmacare Ltd"
+        ],
+        "to": "Pharmacare Ltd."
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Astrazeneca Pharmaceuticals (Pty) Ltd-Sunninghill",
+          "AstraZeneca Pharmaceuticals (Pty) Ltd-Sunninghill"
+        ],
+        "to": "Astrazeneca Pharmaceuticals (Pty) Ltd-Sunninghill"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Litha Pharma (Pty) Ltd",
+          "Litha Pharma (PTY) Ltd"
+        ],
+        "to": "Litha Pharma (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bodene (Pty) Ltd",
+          "Bodene (PTY) LtD"
+        ],
+        "to": "Bodene (Pty) Ltd"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Applicant Name",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Applicant Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ranbaxy S.A (Pty)Ltd",
+          "Ranbaxy (S.A.) (Pty) Ltd",
+          "Ranbaxy (SA)(Pty) Ltd",
+          "Ranbaxy(SA)(Pty)Ltd"
+        ],
+        "to": "Ranbaxy S.A (Pty)Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Accord Healthcare (Pty) Ltd",
+          "Accord-Healthcare (Pty) Ltd",
+          "ACCORD HEALTHCARE (PTY)LTD"
+        ],
+        "to": "Accord Healthcare (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sandoz SA Pty Ltd",
+          "Sandoz SA (Pty)Ltd",
+          "Sandoz SA(Pty)Ltd"
+        ],
+        "to": "Sandoz SA Pty Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "B Braun Medical (Pty) Ltd",
+          "B.Braun Medical (Pty) Ltd",
+          "B.Braun Medical (Pty)Ltd"
+        ],
+        "to": "B Braun Medical (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Medpro (Pty) Ltd",
+          "Cipla-Medpro (Pty) Ltd",
+          "Cipla Medpro (Pty)Ltd"
+        ],
+        "to": "Cipla Medpro (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MSD (Pty) Ltd",
+          "MSD(Pty)Ltd",
+          "MSD(Pty) Ltd"
+        ],
+        "to": "MSD (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dr Reddy's Laboratories (Pty) Ltd",
+          "Dr.Reddys Laboratories (Pty) Ltd",
+          "Dr.Reddys Laboratories(Pty) Ltd"
+        ],
+        "to": "Dr Reddy's Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Teva Pharmaceuticals (Pty) Ltd",
+          "Teva Pharmaceuticals(Pty)Ltd"
+        ],
+        "to": "Teva Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Mepro (Pty) Ltd",
+          "Cipla-Mepro (PTY) Ltd"
+        ],
+        "to": "Cipla Mepro (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "iNova Pharmaceuticals (Pty) Ltd",
+          "iNova Pharmaceuticals(Pty) Ltd"
+        ],
+        "to": "iNova Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Akacia Health Care (Pty) Ltd",
+          "Akacia HealthCare (Pty) Ltd"
+        ],
+        "to": "Akacia Health Care (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bristol Myers Squibb",
+          "Bristol-Myers Squibb"
+        ],
+        "to": "Bristol Myers Squibb"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Unicorn Pharmaceuticals (Pty) Ltd",
+          "Unicorn Pharmaceuticals (Pty)Ltd"
+        ],
+        "to": "Unicorn Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dezzo Trading 392 (Pty) Ltd",
+          "Dezzo Trading 392 (PTY)Ltd"
+        ],
+        "to": "Dezzo Trading 392 (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "J&B Pharmaceutical Consultants",
+          "J & B Pharmaceutical Consultants"
+        ],
+        "to": "J&B Pharmaceutical Consultants"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Watson Pharma No1 (Pty) Ltd",
+          "Watson Pharma No. 1 (Pty) Ltd"
+        ],
+        "to": "Watson Pharma No1 (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bristol-Myers Squibb (Pty) Ltd",
+          "Bristol Myers Squibb (Pty) Ltd"
+        ],
+        "to": "Bristol-Myers Squibb (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmacare Limited Port Elizabeth",
+          "Pharmacare Limited.Port Elizabeth"
+        ],
+        "to": "Pharmacare Limited Port Elizabeth"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bayer (Pty) Ltd",
+          "Bayer(Pty) Ltd"
+        ],
+        "to": "Bayer (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Be Tabs Pharmaceuticals (Pty) Ltd",
+          "Be-Tabs Pharmaceuticals (Pty) Ltd"
+        ],
+        "to": "Be Tabs Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Litha Pharma (Pty) Ltd",
+          "Litha Pharma (Pty)Ltd"
+        ],
+        "to": "Litha Pharma (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Astrazeneca Pharmaceuticals (Pty) Ltd - Sunninghill",
+          "Astrazeneca Pharmaceuticals (Pty) Ltd-Sunninghill"
+        ],
+        "to": "Astrazeneca Pharmaceuticals (Pty) Ltd - Sunninghill"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "H. Lundbeck (Pty) Ltd",
+          "H.Lundbeck (Pty) Ltd"
+        ],
+        "to": "H. Lundbeck (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alcon Laboratories (Sa) (Pty) Ltd",
+          "Alcon Laboratories S.A.(Pty)Ltd"
+        ],
+        "to": "Alcon Laboratories (Sa) (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Be Tabs Pharmaceuticals",
+          "Be-Tabs Pharmaceuticals"
+        ],
+        "to": "Be Tabs Pharmaceuticals"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schering-Plough (Pty) Ltd - (Site1)",
+          "Schering-Plough (Pty) Ltd - (Site 1)"
+        ],
+        "to": "Schering-Plough (Pty) Ltd - (Site1)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adcock Ingram Critical Care (Pty) Ltd",
+          "Adcock Ingram Critical Care (Pty)Ltd"
+        ],
+        "to": "Adcock Ingram Critical Care (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Wyeth SA (Pty)Ltd",
+          "Wyeth SA (Pty) Ltd"
+        ],
+        "to": "Wyeth SA (Pty)Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ferring (Pty) Ltd",
+          "Ferring (Pty)Ltd"
+        ],
+        "to": "Ferring (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmacare Ltd. - Woodmead",
+          "Pharmacare Ltd.Woodmead"
+        ],
+        "to": "Pharmacare Ltd. - Woodmead"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sanofi Aventis South Africa (Pty) Ltd",
+          "Sanofi-Aventis South Africa (Pty)Ltd"
+        ],
+        "to": "Sanofi Aventis South Africa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sanofi-Aventis South Africa",
+          "Sanofi Aventis South Africa"
+        ],
+        "to": "Sanofi-Aventis South Africa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sonke Pharmaceuticals (Pty) Ltd",
+          "Sonke Pharmaceuticals(PTY) LTD"
+        ],
+        "to": "Sonke Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharma Q (Pty) Ltd",
+          "Pharma-Q (Pty) Ltd"
+        ],
+        "to": "Pharma Q (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Safeline Pharmaceuticals (Pty) Ltd",
+          "Safeline Pharmaceuticals (Pty)Ltd"
+        ],
+        "to": "Safeline Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eli Lilly (SA) (Pty) Ltd",
+          "Eli Lilly (SA)(Pty) Ltd"
+        ],
+        "to": "Eli Lilly (SA) (Pty) Ltd"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Applicant Name",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Applicant Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glaxosmithkline South Africa (Pty) Ltd - Cape Town",
+          "GlaxoSmithKline (Pty) Ltd",
+          "GlaxoSmithKline South Africa (Pty) Limited",
+          "GlaxoSmithKline SA (Pty) Ltd.",
+          "GlaxoSmithKline Consumer",
+          "GlaxoSmithKline South Africa (Pty) Ltd",
+          "GlaxoSmithKline",
+          "GlaxoSmithKine South Africa (Pty) Ltd- Consumer Division",
+          "GlaxoSmithKline South Africa (Pty) Ltd - Consumer Healthcare"
+        ],
+        "to": "Glaxosmithkline South Africa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Adcock Ingram Limited",
+          "Adcock Ingram Critical Care (Pty) Ltd",
+          "Adcock Ingram Healthcare (Pty) Ltd",
+          "Adcock Ingram Ltd",
+          "Adcock Ingram Critical Care Ltd",
+          "Adcock Ingram Limted",
+          "Adcock Ingram Healthcare Ltd",
+          "Adcock Ingram Critical Care"
+        ],
+        "to": "Adcock Ingram"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "National Bioproducts Institute (NPC)",
+          "National Bioproducts Institute",
+          "National Bioproducsts Institute",
+          "National Bioproducts"
+        ],
+        "to": "National Bioproducts Institute)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dezzo Trading 392 (Pty) Limited T/A Indo Pharma",
+          "Dezzo Trading 392 (Pty) Ltd trading as Indo Pharma",
+          "Dezzo Trading Pty Ltd",
+          "Dezzo Trading 392 (Pty) Ltd"
+        ],
+        "to": "Dezzo Trading 392 (Pty) Limited T/A Indo Pharma"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Astrazeneca Pharmaceuticals (Pty) Ltd - Sunninghill",
+          "AstraZeneca Pharmaceuticals (Pty) Ltd",
+          "Astrazeneca Pharmaceuticals (Pty) Ltd- Bryanston",
+          "Astrazeneca Pharmaceuticals"
+        ],
+        "to": "Astrazeneca Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sanofi Aventis South Africa (Pty) Ltd",
+          "Sanofi-Aventis South Africa",
+          "Sanofi-Aventis SA (Pty) Ltd"
+        ],
+        "to": "Sanofi Aventis South Africa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharma Dynamics (Pty) Ltd",
+          "Pharma Dynamics",
+          "Pharma Dynamics (Pty) Limited"
+        ],
+        "to": "Pharma Dynamics (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmacare Ltd t/a Aspen",
+          "Pharmacare Ltd. - Woodmead",
+          "Pharmcare Ltd., Woodmead"
+        ],
+        "to": "Pharmacare Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fresenius Kabi Sa (Pty) Ltd",
+          "Fresenius Kabi South Africa (Pty) Ltd",
+          "Fresenius Kabi SA"
+        ],
+        "to": "Fresenius Kabi Sa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Aurobindo Pharma (Pty) Ltd",
+          "Aurobindo Pharma Limited",
+          "Aurobindo Pharma Ltd"
+        ],
+        "to": "Aurobindo Pharma (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmacare Limited, Woodmead",
+          "Pharmacare Limited",
+          "Pharmacare Limited Port Elizabeth"
+        ],
+        "to": "Pharmacare Limited"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bristol-Myers Squibb (Pty) Ltd",
+          "Bristol Meyers Squibb",
+          "Bristol Myers Squibb"
+        ],
+        "to": "Bristol-Myers Squibb (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Glenmark Pharmaceuticals South Africa (Pty) Ltd",
+          "Glenmark Pharmaceuticals",
+          "Glenmark Pharmaceuticals S A (Pty) Ltd"
+        ],
+        "to": "Glenmark Pharmaceuticals South Africa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Servier Laboratories Sa (Pty) Ltd",
+          "Servier Laboratories",
+          "Servier Laboratories South Africa (Pty) Ltd"
+        ],
+        "to": "Servier Laboratories Sa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Reckitt Benckiser Pharmaceuticals Pty (Ltd)",
+          "Reckitt Benckiser Healthcare SA Pty (Ltd)",
+          "Reckitt Benckiser Healthcare South Africa (Pty) Ltd"
+        ],
+        "to": "Reckitt Benckiser Pharmaceuticals Pty (Ltd)"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Batswadi Pharmaceuticals (Pty) Ltd",
+          "BATSWADI PHARMACEUTICALS"
+        ],
+        "to": "Batswadi Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xixia Pharmaceuticals (Pty) Ltd",
+          "Xixia Pharmaceuticals"
+        ],
+        "to": "Xixia Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Baroque Pharmaceuticals (Pty) Ltd",
+          "Barqoue Pharmaceaticals (Pty) Ltd"
+        ],
+        "to": "Baroque Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Hetero Drugs South Africa",
+          "Hetero Drugs SA"
+        ],
+        "to": "Hetero Drugs South Africa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gulf Drug Company (Pty) Ltd",
+          "Gulf Drug Company"
+        ],
+        "to": "Gulf Drug Company (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Camox Pharmaceuticals (Pty) Ltd",
+          "Camox Pharmaceuticals"
+        ],
+        "to": "Camox Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Alcon Laboratories (Sa) (Pty) Ltd",
+          "Alcon Laboratories"
+        ],
+        "to": "Alcon Laboratories (Sa) (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Emcure Pharmaceuticals South Africa (Pty) Ltd",
+          "Emcure Pharmaceuticals SA (Pty) Ltd"
+        ],
+        "to": "Emcure Pharmaceuticals South Africa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Ranbaxy Pharmacueticals (Pty) Ltd",
+          "Ranbaxy Pharmaceuticals (Pty) Ltd"
+        ],
+        "to": "Ranbaxy Pharmacueticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Winthrop Pharmaceuticals (Pty) Ltd",
+          "Winthrop Pharmaceuticals"
+        ],
+        "to": "Winthrop Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SCP Pharmaceuticals (Pty) Ltd",
+          "SCP Pharmaceuticals (Merck)"
+        ],
+        "to": "SCP Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Medicine Developers International CC",
+          "Medicine Developers Internationl CC"
+        ],
+        "to": "Medicine Developers International CC"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Meyerzall Laboratories (Pty) Ltd",
+          "MeyerZall Laboratories"
+        ],
+        "to": "Meyerzall Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Johnson & Johnson (Pty) Ltd",
+          "Johnson & Johnson Medical (Pty) Ltd"
+        ],
+        "to": "Johnson & Johnson (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dr Reddy's Laboratories (Pty) Ltd",
+          "Dr Reddy's Laboratories"
+        ],
+        "to": "Dr Reddy's Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Genzyme Biopharmaceuticals SA (Pty) Ltd",
+          "Genzyme Biopharmaceuticals South Africa (Pty) Ltd"
+        ],
+        "to": "Genzyme Biopharmaceuticals SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Equity Pharmaceuticals (Pty) Ltd",
+          "Equity Pharmaceuticals"
+        ],
+        "to": "Equity Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Meda Pharma South Africa (Pty) Limited",
+          "Meda Pharma South Africa (Pty) Ltd"
+        ],
+        "to": "Meda Pharma South Africa (Pty) Limited"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Safeline Pharmaceuticals (Pty) Ltd",
+          "Safeline Pharmaceuticals"
+        ],
+        "to": "Safeline Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharma Dynamcis",
+          "Pharma Dynamcis (Pty) Ltd"
+        ],
+        "to": "Pharma Dynamcis"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Innovata Pharmaceuticals cc",
+          "Innovata Pharmaceuticals"
+        ],
+        "to": "Innovata Pharmaceuticals cc"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Allergan Pharmaceuticals (Pty) Ltd",
+          "Allergan Pharmaceutical (Pty) Ltd"
+        ],
+        "to": "Allergan Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dezzo Trading",
+          "Dezzo Trading 392"
+        ],
+        "to": "Dezzo Trading"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Galderma Laboratories SA (Pty) Ltd",
+          "Galderma Laboratories South Africa (Pty) Ltd"
+        ],
+        "to": "Galderma Laboratories SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmaco Distribution (Pty) Ltd",
+          "Pharmaco Distribution"
+        ],
+        "to": "Pharmaco Distribution (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Smith & Nephew Pharmaceuticals (Pty) Limited",
+          "Smith & Nephew Pharmaceuticals (Pty) Ltd"
+        ],
+        "to": "Smith & Nephew Pharmaceuticals (Pty) Limited"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmascript Pharmaceuticals Ltd",
+          "Pharmascript Pharmaceuticals"
+        ],
+        "to": "Pharmascript Pharmaceuticals Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Austell Laboratories (Pty) Ltd",
+          "Austell Laboratories"
+        ],
+        "to": "Austell Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Brunel Laboratoria (Pty) Ltd",
+          "Brunel Laboratories (Pty) Ltd"
+        ],
+        "to": "Brunel Laboratoria (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fresenius Kabi Manufacturing SA (Pty) Ltd",
+          "Fresenius Kabi Medical Care"
+        ],
+        "to": "Fresenius Kabi Manufacturing SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Eco Pharmaceuticals (Pty) Ltd",
+          "Eco Pharmaceuticals"
+        ],
+        "to": "Eco Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sun Pharmaceuticals SA (Pty) Ltd",
+          "Sun Pharmaceuticals (Pty) Ltd"
+        ],
+        "to": "Sun Pharmaceuticals SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Loock Pharmaceuticals (Pty) Ltd",
+          "Loock Pharmaceuticals"
+        ],
+        "to": "Loock Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Procter & Gamble SA (Pty) Ltd",
+          "Procter & Gamble"
+        ],
+        "to": "Procter & Gamble SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Biotech Laboratories (Pty) Ltd",
+          "Biotech Laboratories"
+        ],
+        "to": "Biotech Laboratories (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Be Tabs Pharmaceuticals (Pty) Ltd",
+          "Be Tabs Pharmaceuticals"
+        ],
+        "to": "Be Tabs Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Schering-Plough (Pty) Ltd",
+          "Schering-Plough (Pty) Ltd - (Site1)"
+        ],
+        "to": "Schering-Plough (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bliss Pharmaceuticals",
+          "Bliss Pharmaceuticals cc"
+        ],
+        "to": "Bliss Pharmaceuticals"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Applicant Name",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Applicant Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmacare Ltd",
+          "Pharmacare Ltd."
+        ],
+        "to": "Pharmacare Ltd"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Applicant Name",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Applicant Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Medicine Developers International CC",
+          "Medicines Developers International CC"
+        ],
+        "to": "Medicine Developers International CC"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cipla Medpro (Pty) Ltd",
+          "Cipla Mepro (Pty) Ltd"
+        ],
+        "to": "Cipla Medpro (Pty) Ltd"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Applicant Name",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Applicant Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Arrow Pharma SA (Pty) Ltd",
+          "Arrow Pharma (Pty) Ltd"
+        ],
+        "to": "Arrow Pharma SA (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Allergan Pharmaceuticals (Pty) Ltd",
+          "Allergen Pharmaceutical (Pty) Ltd"
+        ],
+        "to": "Allergan Pharmaceuticals (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bayer (Pty) Ltd",
+          "Bayer SA (Pty) Ltd"
+        ],
+        "to": "Bayer (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Fresenius Kabi Sa (Pty) Ltd",
+          "Fresenius Kabi (Pty) Ltd"
+        ],
+        "to": "Fresenius Kabi Sa (Pty) Ltd"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Bodene (Pty) Ltd",
+          "Bodene SA (Pty) Ltd"
+        ],
+        "to": "Bodene (Pty) Ltd"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column Applicant Name",
+    "engineConfig": {
+      "mode": "record-based",
+      "facets": []
+    },
+    "columnName": "Applicant Name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Xixia Pharmaceuticals (Pty) Ltd",
+          "Xixia Pharmacueticals (Pty) Ltd"
+        ],
+        "to": "Xixia Pharmaceuticals (Pty) Ltd"
+      }
+    ]
   }
 ]
