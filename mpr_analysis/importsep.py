@@ -79,7 +79,7 @@ def parse(filename):
         if "medicine" in regno.lower():
             continue
 
-        if regno.strip() != "":
+        if regno.strip() != "" or name != "":
             if product and not skip_ingredients: yield product
 
             generic_value = worksheet.cell_value(idx, 20)
