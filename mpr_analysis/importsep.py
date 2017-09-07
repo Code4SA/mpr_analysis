@@ -89,7 +89,6 @@ def parse(filename):
                 is_generic = "Generic"
             else:
                 is_generic = None
-
             try:
                 nappi_code = "%s" % int(nappi_code)
             except ValueError:
@@ -117,7 +116,7 @@ def parse(filename):
 
             product = {
                 "applicant_name": applicant_name.strip(),
-                "applicant_licence_no": applicant_license_no.strip(),
+                "applicant_licence_no": str(applicant_license_no).strip(),
                 "nappi_code" : nappi_code.strip(),
                 "regno" : regno.strip(),
                 "schedule" : worksheet.cell_value(idx, 5),
