@@ -43,8 +43,11 @@ PYTHONPATH=. alembic upgrade head
 
 ### Load the data
 
+Run trhough all the cells in clean.ipynb
+Save the exported mpr-reliable-data.csv file in /data as mpr-reliable-data.xlsx
+
 ```
-python mpr_analysis/importsep.py data/all-consistent-date-cleaned.xlsx
+python mpr_analysis/importsep.py data/mpr-reliable-data.xlsx
 ```
 
 This prints out some messages like "Could not process Pedea (a40/3.1/0174) due to lack of nappi code" and progress stats like
